@@ -8,4 +8,4 @@ Status: draft
 
 Dude.
 
-{% notebook histogram.ipynb cells[0:] %}
+{% notebook histogram.ipynb cells[1:] %}

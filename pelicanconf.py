@@ -14,6 +14,7 @@ STATIC_PATHS = [
     "cv",
     "xkcd",
     "LICENSE",
+    "downloads",
 ]
 IGNORE_FILES = [
     "README.md",
@@ -35,3 +36,5 @@ ARTICLE_SAVE_AS = "posts/{slug}/index.html"
 
 PLUGIN_PATHS = ["plugins", ]
 PLUGINS = ["liquid_tags.notebook", ]
+
+NOTEBOOK_DIR = "downloads/notebooks"
