@@ -8,6 +8,11 @@ SITEURL = "http://dan.iel.fm"
 RELATIVE_URLS = True
 
 PATH = "content"
+STATIC_PATHS = [
+    "images",
+    "cv",
+    "xkcd",
+]
 
 TIMEZONE = "America/New_York"
 
