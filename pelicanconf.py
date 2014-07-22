@@ -12,6 +12,10 @@ STATIC_PATHS = [
     "images",
     "cv",
     "xkcd",
+    "LICENSE",
+]
+IGNORE_FILES = [
+    "README.md",
 ]
 
 TIMEZONE = "America/New_York"
