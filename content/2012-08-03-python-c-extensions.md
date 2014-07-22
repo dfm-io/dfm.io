@@ -48,12 +48,10 @@ To be concrete, let's consider a specific example: fitting a line
 points \\( \\{ x\_n, y\_n, \sigma\_n \\} \\). In this case, the
 chi-squared function is given by:
 
-<p>
-\(
-    \displaystyle{\chi^2 (m, b) = \sum_{n = 1} ^N \frac{[y_n -
-        (m \, x_n + b)]^2}{\sigma_n^2}} \quad .
-\)
-</p>
+$$
+\chi^2 (m, b) = \sum_{n = 1} ^N \frac{[y_n -
+        (m \, x_n + b)]^2}{\sigma_n^2} \quad .
+$$
 
 It's probably overkill to write this function in C but it'll do for our
 purposes today. In C, the file `chi2.c` containing our function should look
