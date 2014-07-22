@@ -6,3 +6,4 @@ Gemfile.lock
 *.pid
 output
 cache
+_nb_header.html

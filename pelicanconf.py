@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u"Dan Foreman-Mackey"
 SITENAME = u"Dan Foreman-Mackey"
@@ -31,3 +32,6 @@ THEME = "dfm_theme"
 
 ARTICLE_URL = "posts/{slug}/"
 ARTICLE_SAVE_AS = "posts/{slug}/index.html"
+
+PLUGIN_PATHS = ["plugins", ]
+PLUGINS = ["liquid_tags.notebook", ]

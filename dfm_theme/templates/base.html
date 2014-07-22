@@ -5,6 +5,10 @@
 <title>{% block title %}Dan Foreman-Mackey{% endblock %}</title>
 <meta id="viewport" name="viewport" content="width=500" />
 
+{% if EXTRA_HEADER %}
+    {{ EXTRA_HEADER }}
+{% endif %}
+
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/normalize.css" type="text/css" />
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/font-awesome.min.css" type="text/css" />
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/base.css" type="text/css" />

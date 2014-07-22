@@ -75,3 +75,11 @@
         padding: 0 9px;
     }
 }
+
+/*
+ *  DEAL WITH IPYTHON NOTEBOOKS.
+ */
+
+.prompt, .anchor-link {
+    display: none;
+}
