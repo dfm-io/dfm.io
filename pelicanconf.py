@@ -15,6 +15,7 @@ STATIC_PATHS = [
     "xkcd",
     "LICENSE",
     "downloads",
+    "posts",
 ]
 IGNORE_FILES = [
     "README.md",
