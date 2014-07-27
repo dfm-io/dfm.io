@@ -6,6 +6,7 @@ Summary: Some words about histograms.
 Image: /images/histogram.jpg
 Status: draft
 
-Dude.
+> This post was generated from an IPython notebook that can be downloaded
+> [here](/downloads/notebooks/histogram.ipynb).
 
 {% notebook histogram.ipynb cells[1:] %}

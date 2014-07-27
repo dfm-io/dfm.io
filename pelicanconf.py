@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-import os
 
 AUTHOR = u"Dan Foreman-Mackey"
 SITENAME = u"Dan Foreman-Mackey"
@@ -15,7 +14,7 @@ STATIC_PATHS = [
     "xkcd",
     "LICENSE",
     "downloads",
-    "posts",
+    "drafts",
 ]
 IGNORE_FILES = [
     "README.md",
@@ -34,6 +33,9 @@ THEME = "dfm_theme"
 
 ARTICLE_URL = "posts/{slug}/"
 ARTICLE_SAVE_AS = "posts/{slug}/index.html"
+
+PAGE_URL = "{slug}/"
+PAGE_SAVE_AS = "{slug}/index.html"
 
 PLUGIN_PATHS = ["plugins", ]
 PLUGINS = ["liquid_tags.notebook", ]

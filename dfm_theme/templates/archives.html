@@ -1,11 +1,26 @@
 {% extends "base.html" %}
-{% block content %}
-<h1>Archives for {{ SITENAME }}</h1>
+{% block title %}Dan Foreman-Mackey{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/page.css" type="text/css" />
+{% endblock %}
 
-<dl>
-{% for article in dates %}
-    <dt>{{ article.locale_date }}</dt>
-    <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
-{% endfor %}
-</dl>
+{% block content %}
+
+{% include "topavatar.html" %}
+<div class="container">
+
+    <h1>Blog</h1>
+
+    <ul class="projects">
+    {% for article in dates %}
+    <li>
+    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a> &mdash;
+    {{ article.summary | striptags }}
+    </li>
+    {% endfor %}
+    </ul>
+
+</div>
+
 {% endblock %}

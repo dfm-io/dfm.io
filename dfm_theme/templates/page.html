@@ -1,15 +1,25 @@
 {% extends "base.html" %}
-{% block title %}{{ page.title }}{%endblock%}
+{% block title %}Dan Foreman-Mackey's {{ page.title }}{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/page.css" type="text/css" />
+{% endblock %}
+
 {% block content %}
+
+<div class="container">
+    <div class="topavatar">
+        <img src="{{ SITEURL }}/theme/images/avatar.png" alt="me">
+    </div>
+</div>
+
+{% include "topbar.html" %}
+
+<div class="container">
     <h1>{{ page.title }}</h1>
-    {% import 'translations.html' as translations with context %}
-    {{ translations.translations_for(page) }}
 
     {{ page.content }}
 
-	{% if page.modified %}
-		<p>
-		Last updated: {{ page.locale_modified }}
-		</p>
-	{% endif %}
+</div>
+
 {% endblock %}

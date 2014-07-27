@@ -27,26 +27,20 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div id="topbar">
-            <span><a href="{{ SITEURL }}">dan foreman-mackey</a></span>
 
-            <ul>
-                <li><a href="{{ SITEURL }}#about">About</a></li>
-                <li><a href="{{ SITEURL }}#research">Research</a></li>
-                <li><a href="{{ SITEURL }}#software">Code</a></li>
-            </ul>
-        </div>
-    </div>
+<div class="container">
+    {% include "topbar.html" %}
+</div>
 
-    <div id="topimage" style="background-image: url('{{ article.image }}')"></div>
+<div class="topimage" style="background-image: url('{{ article.image }}')"></div>
 
-    <div class="container">
+<div class="container">
 
-        <h1>{{ article.title }}</h1>
+    <h1>{{ article.title }}</h1>
 
-        <section>
-            {{ article.content }}
-        </section>
-    </div>
+    <section>
+        {{ article.content }}
+    </section>
+</div>
+
 {% endblock %}
