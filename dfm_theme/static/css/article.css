@@ -93,7 +93,8 @@
  */
 
 .MathJax_Display {
-    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 .prompt, .anchor-link {
