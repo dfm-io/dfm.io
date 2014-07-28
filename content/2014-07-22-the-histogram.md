@@ -8,5 +8,6 @@ Status: draft
 
 > This post was generated from an IPython notebook that can be downloaded
 > [here](/downloads/notebooks/histogram2.ipynb).
+> It is the first in a series about hierarchical inference in astronomy.
 
 {% notebook histogram1.ipynb cells[1:] %}

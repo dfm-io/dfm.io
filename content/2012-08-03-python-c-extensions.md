@@ -406,8 +406,8 @@ repository using `git`:
     python setup.py build_ext --inplace
 
 If you have any comments, suggestions or questions, [fork this
-page](https://github.com/dfm/dfm.github.com/edit/master/_posts/2012-08-01-python-c-extensions.markdown)
-or [tweet at me](https://twitter.com/__dfm__).
+page](https://github.com/dfm/dfm.io) or [tweet at
+me](https://twitter.com/exoplaneteer).
 
 
 [capi]: http://docs.python.org/c-api/
