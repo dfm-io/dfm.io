@@ -37,7 +37,11 @@
 
     <div class="page-title">
         <h1>{{ article.title }}</h1>
+        {% if article.status == "draft" %}
+        <p>DRAFT VERSION</p>
+        {% else %}
         <p>{{ article.date | strftime('%B %d, %Y') }}</p>
+        {% endif %}
     </div>
 
     <section>
@@ -45,6 +49,7 @@
     </section>
 </div>
 
+{% if article.status != "draft" %}
 <div class="container">
 
     <h2>Discussion</h2>
@@ -68,5 +73,6 @@
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 </div>
+{% endif %}
 
 {% endblock %}
