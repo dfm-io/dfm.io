@@ -14,10 +14,10 @@ STATIC_PATHS = [
     "LICENSE",
     "downloads",
     "drafts",
+    "cv.pdf",
 ]
 IGNORE_FILES = [
     "README.md",
-    "cv",
 ]
 
 TIMEZONE = "America/New_York"

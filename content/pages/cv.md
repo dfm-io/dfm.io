@@ -3,6 +3,10 @@ Url: cv/
 Save_as: cv/index.html
 Template: cv
 
+<div class="pdf-link">
+    <a href="/cv.pdf">Get the PDF version</a>
+</div>
+
 # Daniel Foreman-Mackey
 
 <div class="address">
@@ -58,12 +62,12 @@ New York University<br>
    Heidelberg, Germany.
 1. [WTF is for lunch?](https://speakerdeck.com/dfm/wtf-is-for-lunch-at-hackandtell),
    2013, Hack & Tell NYC.
-1. [Data analysis using MCMC](https://speakerdeck.com/dfm/data-analysis-with-mcmc)
+1. [Data analysis using MCMC](https://speakerdeck.com/dfm/data-analysis-with-mcmc),
    2013, Physics Department, Vanderbilt University.
 1. [Twitterick](https://speakerdeck.com/dfm/hack-and-tell-twitterick), 2013,
    Hack & Tell, NYC.
 1. Probabilistic detection of exoplanet candidates, 2013, CCPP, NYU.
-1. [Data analysis using MCMC](https://speakerdeck.com/dfm/data-analysis-with-mcmc)
+1. [Data analysis using MCMC](https://speakerdeck.com/dfm/data-analysis-with-mcmc),
    2013, Astronomy Department, Columbia University.
 1. [A noise model for Kepler light
    curves](https://speakerdeck.com/dfm/modeling-kepler-systematics-using-gaussian-processes),
@@ -123,3 +127,7 @@ New York University<br>
   [dfm.io/kplr](http://dfm.io/kplr)
 
 * For a full listing, check [github.com/dfm](https://github.com/dfm).
+
+<div class="updated">
+    Last updated 2014-09-07
+</div>

@@ -3,6 +3,7 @@
 {% block head %}
     {{ super() }}
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/cv.css" type="text/css" />
+    <link media="print" rel="stylesheet" href="{{ SITEURL }}/theme/css/cv-print.css" type="text/css" />
 {% endblock %}
 {% block content %}
 {% include "topavatar.html" %}
