@@ -10,7 +10,6 @@ RELATIVE_URLS = True
 PATH = "content"
 STATIC_PATHS = [
     "images",
-    "cv",
     "xkcd",
     "LICENSE",
     "downloads",
@@ -18,6 +17,7 @@ STATIC_PATHS = [
 ]
 IGNORE_FILES = [
     "README.md",
+    "cv",
 ]
 
 TIMEZONE = "America/New_York"
