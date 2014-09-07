@@ -45,4 +45,81 @@ New York University<br>
 1. Montet, B. T., Angus, R., Barclay, T., Dawson, R., Fergus, R., Foreman-Mackey, D., Harmeling, S., Hirsch, M., Hogg, D. W., Lang, D., Schiminovich, D., & Scholkopf, B., 2013, [Maximizing Kepler science return per telemetered pixel: Searching the habitable zones of the brightest stars](http://arxiv.org/abs/1309.0654).
 
 
-## Unrefereed publications
+## Selected talks
+
+1. [Photometric calibration in the time
+   domain](http://speakerdeck.com/u/dfm/p/measuring-the-undetectable), 2011,
+   MPIA, Heidelberg, Germany.
+1. [Python in astronomy](http://speakerdeck.com/u/dfm/p/python-and-mongodb-in-astronomy),
+   2011, PyGotham NYC.
+1. [MCMC Tutorial](https://github.com/dfm/python-lunch), 2012, MPIA,
+   Heidelberg, Germany.
+1. [The mass of M31](https://speakerdeck.com/dfm/the-mass-of-m31), 2012, MPIA,
+   Heidelberg, Germany.
+1. [WTF is for lunch?](https://speakerdeck.com/dfm/wtf-is-for-lunch-at-hackandtell),
+   2013, Hack & Tell NYC.
+1. [Data analysis using MCMC](https://speakerdeck.com/dfm/data-analysis-with-mcmc)
+   2013, Physics Department, Vanderbilt University.
+1. [Twitterick](https://speakerdeck.com/dfm/hack-and-tell-twitterick), 2013,
+   Hack & Tell, NYC.
+1. Probabilistic detection of exoplanet candidates, 2013, CCPP, NYU.
+1. [Data analysis using MCMC](https://speakerdeck.com/dfm/data-analysis-with-mcmc)
+   2013, Astronomy Department, Columbia University.
+1. [A noise model for Kepler light
+   curves](https://speakerdeck.com/dfm/modeling-kepler-systematics-using-gaussian-processes),
+   2013, MPIA, Heidelberg, Germany.
+1. From pixels to aliens (Public Talk), 2013, Astronomy on Tap, NYC.
+1. Practical data analysis using MCMC, 2013, Astronomy Department, UCSC.
+1. Practical data analysis using MCMC, 2014, Astronomy Department, University
+   of Hertfordshire.
+1. [Large-scale systematic characterization of transiting
+   exoplanets](https://speakerdeck.com/dfm/large-scale-systematic-characterization-of-transiting-exoplanets),
+   2014, Astronomy Department, Oxford University.
+1. [The NYC coffee
+   map](https://speakerdeck.com/dfm/hack-and-tell-the-coffee-map), 2014, Hack
+   & Tell NYC.
+1. [An astronomer's introduction to Gaussian
+   processes](https://speakerdeck.com/dfm/an-astronomers-introduction-to-gaussian-processes),
+   2014, CfA.
+1. The rate of Earth analogs, 2014, NASA Ames.
+1. [An astronomer's introduction to Gaussian
+   processes](https://speakerdeck.com/dfm/an-astronomers-introduction-to-gaussian-processes-v2),
+   2014, Bayesian Computing for Astronomical Data Analysis (Summer school at
+   Penn State).
+1. [Exoplanet population
+   inference](https://speakerdeck.com/dfm/exoplanet-population-inference),
+   2014, ExoStat conference, CMU.
+1. Hierarchical inference for astronomers, 2014, Strasbourg Observatory,
+   France.
+1. [Exoplanet population
+   inference](https://speakerdeck.com/dfm/exoplanet-population-inference),
+   2014, MPIA, Heidelberg, Germany.
+1. [Inferring exoplanet populations from noisy, incomplete
+   catalogs](https://speakerdeck.com/dfm/exoplanet-population-inference-v2),
+   2014, Queen's University, Kingston, Canada.
+
+
+## Teaching experience
+
+* *2011* — Laboratory Instructor, Introductory Experimental Physics I (PHYS-UA
+  91), NYU.
+* *2008–2010* — Laboratory Instructor, Introductory Physics (PHYS 107)
+  Queen's University, Kingston, Canada.
+
+
+## Popular open source software
+
+* [emcee](http://dfm.io/emcee) — MCMC sampling in Python. Popular in
+  astronomy; the paper has [185
+  citations](http://adsabs.harvard.edu/abs/2013PASP..125..306F) as of
+  2014-09-07. [dfm.io/emcee](http://dfm.io/emcee)
+* [George](http://dfm.io/george) — Blazingly fast Gaussian processes for
+  regression. Implemented in C++ and Python bindings.
+  [dfm.io/george](http://dfm.io/george)
+* [triangle.py](https://github.com/dfm/triangle.py) — Simple corner plots (or
+  scatterplot matrices) in matplotlib.
+  [github.com/dfm/triangle.py](https://github.com/dfm/triangle.py)
+* [kplr](http://dfm.io/kplr) — Python bindings to the Kepler data.
+  [dfm.io/kplr](http://dfm.io/kplr)
+
+* For a full listing, check [github.com/dfm](https://github.com/dfm).
