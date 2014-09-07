@@ -29,12 +29,12 @@ New York University<br>
 
 ## Refereed publications
 
-1. Foreman-Mackey, D., Hogg, D. W., Lang, D., & Goodman, J., 2013, [emcee: The MCMC Hammer](http://arxiv.org/abs/1202.3665) *Pubs. Astr. Soc. Pac.* **125** 5.
-* Dorman, C. E., Widrow, L. M., Guhathakurta, P., Seth, A. C., Foreman-Mackey, D., Bell, E. F., Dalcanton, J. J., Gilbert, K. M., Skillman, E. D., & Williams, B. F., 2013, [A New Approach to Detailed Structural Decomposition from the SPLASH and PHAT Surveys: Kicked-up Disk Stars in the Andromeda Galaxy?](http://arxiv.org/abs/1310.4179) *Astrophys. J.* **779** 5.
-1. Brewer, B. J., Foreman-Mackey, D., & Hogg, D. W., 2013, [Probabilistic Catalogs for Crowded Stellar Fields](http://arxiv.org/abs/1211.5805) *Astron. J.* **146** 5.
-1. Weisz, D. R., Fouesneau, M., Hogg, D. W., Rix, H., Dolphin, A. E., Dalcanton, J. J., Foreman-Mackey, D. T., Lang, D., Johnson, L. C., Beerman, L. C., Bell, E. F., Gordon, K. D., Gouliermis, D., Kalirai, J. S., Skillman, E. D., & Williams, B. F., 2013, [The Panchromatic Hubble Andromeda Treasury. IV. A Probabilistic Approach to Inferring the High-mass Stellar Initial Mass Function and Other Power-law Functions](http://arxiv.org/abs/1211.6105) *Astrophys. J.* **762** 5.
-1. Dawson, R. I., Johnson, J. A., Fabrycky, D. C., Foreman-Mackey, D., Murray-Clay, R. A., Buchhave, L. A., Cargile, P. A., Clubb, K. I., Fulton, B. J., Hebb, L., Howard, A. W., Huber, D., Shporer, A., & Valenti, J. A., 2014, [Large Eccentricity, Low Mutual Inclination: The Three-dimensional Architecture of a Hierarchical System of Giant Planets](http://arxiv.org/abs/1405.5229) *Astrophys. J.* **791** 5.
 1. Foreman-Mackey, D., Hogg, D. W., & Morton, T. D., 2014, [Exoplanet population inference and the abundance of Earth analogs from noisy, incomplete catalogs](http://arxiv.org/abs/1406.3020), *Astrophys. J.* accepted.
+1. Dawson, R. I., Johnson, J. A., Fabrycky, D. C., Foreman-Mackey, D., Murray-Clay, R. A., Buchhave, L. A., Cargile, P. A., Clubb, K. I., Fulton, B. J., Hebb, L., Howard, A. W., Huber, D., Shporer, A., & Valenti, J. A., 2014, [Large Eccentricity, Low Mutual Inclination: The Three-dimensional Architecture of a Hierarchical System of Giant Planets](http://arxiv.org/abs/1405.5229) *Astrophys. J.* **791** 5.
+1. Weisz, D. R., Fouesneau, M., Hogg, D. W., Rix, H., Dolphin, A. E., Dalcanton, J. J., Foreman-Mackey, D. T., Lang, D., Johnson, L. C., Beerman, L. C., Bell, E. F., Gordon, K. D., Gouliermis, D., Kalirai, J. S., Skillman, E. D., & Williams, B. F., 2013, [The Panchromatic Hubble Andromeda Treasury. IV. A Probabilistic Approach to Inferring the High-mass Stellar Initial Mass Function and Other Power-law Functions](http://arxiv.org/abs/1211.6105) *Astrophys. J.* **762** 5.
+1. Brewer, B. J., Foreman-Mackey, D., & Hogg, D. W., 2013, [Probabilistic Catalogs for Crowded Stellar Fields](http://arxiv.org/abs/1211.5805) *Astron. J.* **146** 5.
+* Dorman, C. E., Widrow, L. M., Guhathakurta, P., Seth, A. C., Foreman-Mackey, D., Bell, E. F., Dalcanton, J. J., Gilbert, K. M., Skillman, E. D., & Williams, B. F., 2013, [A New Approach to Detailed Structural Decomposition from the SPLASH and PHAT Surveys: Kicked-up Disk Stars in the Andromeda Galaxy?](http://arxiv.org/abs/1310.4179) *Astrophys. J.* **779** 5.
+1. Foreman-Mackey, D., Hogg, D. W., Lang, D., & Goodman, J., 2013, [emcee: The MCMC Hammer](http://arxiv.org/abs/1202.3665) *Pubs. Astr. Soc. Pac.* **125** 5.
 
 
 ## Publications in preparation
@@ -51,56 +51,56 @@ New York University<br>
 
 ## Selected talks
 
-1. [Photometric calibration in the time
-   domain](http://speakerdeck.com/u/dfm/p/measuring-the-undetectable), 2011,
-   MPIA, Heidelberg, Germany.
-1. [Python in astronomy](http://speakerdeck.com/u/dfm/p/python-and-mongodb-in-astronomy),
-   2011, PyGotham NYC.
-1. [MCMC Tutorial](https://github.com/dfm/python-lunch), 2012, MPIA,
-   Heidelberg, Germany.
-1. [The mass of M31](https://speakerdeck.com/dfm/the-mass-of-m31), 2012, MPIA,
-   Heidelberg, Germany.
-1. [WTF is for lunch?](https://speakerdeck.com/dfm/wtf-is-for-lunch-at-hackandtell),
-   2013, Hack & Tell NYC.
-1. [Data analysis using MCMC](https://speakerdeck.com/dfm/data-analysis-with-mcmc),
-   2013, Physics Department, Vanderbilt University.
-1. [Twitterick](https://speakerdeck.com/dfm/hack-and-tell-twitterick), 2013,
-   Hack & Tell, NYC.
-1. Probabilistic detection of exoplanet candidates, 2013, CCPP, NYU.
-1. [Data analysis using MCMC](https://speakerdeck.com/dfm/data-analysis-with-mcmc),
-   2013, Astronomy Department, Columbia University.
-1. [A noise model for Kepler light
-   curves](https://speakerdeck.com/dfm/modeling-kepler-systematics-using-gaussian-processes),
-   2013, MPIA, Heidelberg, Germany.
-1. From pixels to aliens (Public Talk), 2013, Astronomy on Tap, NYC.
-1. Practical data analysis using MCMC, 2013, Astronomy Department, UCSC.
-1. Practical data analysis using MCMC, 2014, Astronomy Department, University
-   of Hertfordshire.
-1. [Large-scale systematic characterization of transiting
-   exoplanets](https://speakerdeck.com/dfm/large-scale-systematic-characterization-of-transiting-exoplanets),
-   2014, Astronomy Department, Oxford University.
-1. [The NYC coffee
-   map](https://speakerdeck.com/dfm/hack-and-tell-the-coffee-map), 2014, Hack
-   & Tell NYC.
-1. [An astronomer's introduction to Gaussian
-   processes](https://speakerdeck.com/dfm/an-astronomers-introduction-to-gaussian-processes),
-   2014, CfA.
-1. The rate of Earth analogs, 2014, NASA Ames.
-1. [An astronomer's introduction to Gaussian
-   processes](https://speakerdeck.com/dfm/an-astronomers-introduction-to-gaussian-processes-v2),
-   2014, Bayesian Computing for Astronomical Data Analysis (Summer school at
-   Penn State).
+1. [Inferring exoplanet populations from noisy, incomplete
+   catalogs](https://speakerdeck.com/dfm/exoplanet-population-inference-v2),
+   2014, Queen's University, Kingston, Canada.
 1. [Exoplanet population
    inference](https://speakerdeck.com/dfm/exoplanet-population-inference),
-   2014, ExoStat conference, CMU.
+   2014, MPIA, Heidelberg, Germany.
 1. Hierarchical inference for astronomers, 2014, Strasbourg Observatory,
    France.
 1. [Exoplanet population
    inference](https://speakerdeck.com/dfm/exoplanet-population-inference),
-   2014, MPIA, Heidelberg, Germany.
-1. [Inferring exoplanet populations from noisy, incomplete
-   catalogs](https://speakerdeck.com/dfm/exoplanet-population-inference-v2),
-   2014, Queen's University, Kingston, Canada.
+   2014, ExoStat conference, CMU.
+1. [An astronomer's introduction to Gaussian
+   processes](https://speakerdeck.com/dfm/an-astronomers-introduction-to-gaussian-processes-v2),
+   2014, Bayesian Computing for Astronomical Data Analysis (Summer school at
+   Penn State).
+1. The rate of Earth analogs, 2014, NASA Ames.
+1. [An astronomer's introduction to Gaussian
+   processes](https://speakerdeck.com/dfm/an-astronomers-introduction-to-gaussian-processes),
+   2014, CfA.
+1. [The NYC coffee
+   map](https://speakerdeck.com/dfm/hack-and-tell-the-coffee-map), 2014, Hack
+   & Tell NYC.
+1. [Large-scale systematic characterization of transiting
+   exoplanets](https://speakerdeck.com/dfm/large-scale-systematic-characterization-of-transiting-exoplanets),
+   2014, Astronomy Department, Oxford University.
+1. Practical data analysis using MCMC, 2014, Astronomy Department, University
+   of Hertfordshire.
+1. Practical data analysis using MCMC, 2013, Astronomy Department, UCSC.
+1. From pixels to aliens (Public Talk), 2013, Astronomy on Tap, NYC.
+1. [A noise model for Kepler light
+   curves](https://speakerdeck.com/dfm/modeling-kepler-systematics-using-gaussian-processes),
+   2013, MPIA, Heidelberg, Germany.
+1. [Data analysis using MCMC](https://speakerdeck.com/dfm/data-analysis-with-mcmc),
+   2013, Astronomy Department, Columbia University.
+1. Probabilistic detection of exoplanet candidates, 2013, CCPP, NYU.
+1. [Twitterick](https://speakerdeck.com/dfm/hack-and-tell-twitterick), 2013,
+   Hack & Tell, NYC.
+1. [Data analysis using MCMC](https://speakerdeck.com/dfm/data-analysis-with-mcmc),
+   2013, Physics Department, Vanderbilt University.
+1. [WTF is for lunch?](https://speakerdeck.com/dfm/wtf-is-for-lunch-at-hackandtell),
+   2013, Hack & Tell NYC.
+1. [The mass of M31](https://speakerdeck.com/dfm/the-mass-of-m31), 2012, MPIA,
+   Heidelberg, Germany.
+1. [MCMC Tutorial](https://github.com/dfm/python-lunch), 2012, MPIA,
+   Heidelberg, Germany.
+1. [Python in astronomy](http://speakerdeck.com/u/dfm/p/python-and-mongodb-in-astronomy),
+   2011, PyGotham NYC.
+1. [Photometric calibration in the time
+   domain](http://speakerdeck.com/u/dfm/p/measuring-the-undetectable), 2011,
+   MPIA, Heidelberg, Germany.
 
 
 ## Teaching experience
