@@ -4,7 +4,6 @@ Category: Data Analysis
 Slug: mixture-models
 Summary: A practical discussion of mixture models.
 Image: /images/mixture.jpg
-Status: draft
 
 > This post was generated from an IPython notebook that can be downloaded
 > [here](/downloads/notebooks/mixture-models.ipynb).
