@@ -101,11 +101,11 @@ I don't have space to list all the awesome hacks but here are a few examples:
    released!
    [[code](https://github.com/astroML/periodogram)]
 
-8. Finkbeiner (CfA) hacked the IDL plotting library to show a movie of
-   posterior samples instead of static figures. Everyone in the room gasped
-   when he demonstrated that you can zoom, pan, *etc.* as you normally would
-   while the samples continue to animate. How do we include this in papers
-   now? Finkbeiner uses IDL and the classic email-me-to-get-the-code
+8. Finkbeiner (CfA) hacked the IDL image-viewing platform, ATV, to show a
+   movie of posterior samples instead of static figures. Everyone in the room
+   gasped when he demonstrated that you can zoom, pan, *etc.* as you normally
+   would while the samples continue to animate. How do we include this in
+   papers now? Finkbeiner uses IDL and the classic email-me-to-get-the-code
    license but this is impressive enough work that I guess we'll have to
    forgive him.
    [[code access](mailto:Douglas.Finkbeiner@gmail.com)]
