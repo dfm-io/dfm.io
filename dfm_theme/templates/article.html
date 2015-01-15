@@ -29,7 +29,7 @@
 
 {% block content %}
 
-<div class="topimage" style="background-image: url('{{ article.image }}')">
+<div class="topimage" style="background-image: url('{{ article.image }}');{%- if article.position -%}background-position: {{ article.position }};{%- endif -%}">
     <div class="shim"></div>
     {% include "topbar.html" %}
 </div>
