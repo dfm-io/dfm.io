@@ -40,7 +40,8 @@ I don't have space to list all the awesome hacks but here are a few examples:
    Twitter for violating the terms of service.
    [[code](https://github.com/RuthAngus/trollbot)]
 
-2. Davenport (UW), Morris (UW), [ADD MORE NAMES HERE] extended [Davenport et
+2. Davenport (UW), Morris (UW), Fiore-Silvast (UW), DeStefano (UW),
+   Holachek (ADS), and Bianco (NYU) extended [Davenport et
    al. (2013)](http://arxiv.org/abs/1403.3091)'s study of the gender
    distribution of question askers at the meeting. One key result from this
    year's analysis was that if the *first* question is asked by a woman, the
