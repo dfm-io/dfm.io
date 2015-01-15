@@ -9,9 +9,9 @@ Status: draft
 
 At the last minute, my friend [Adrian P-W](http://adrian.pw/) and I found
 ourselves in charge of chairing the Hack Day at the 225th meeting of the
-American Astronomical Society that happened last week in Seattle.
-This is a job usually left to my charismatic PhD advisor
-[Hogg](http://cosmo.nyu.edu/hogg/) and he wrote blog posts about the previous
+American Astronomical Society that happened Jan 5–8 in Seattle.
+This is a job usually left to my charismatic PhD advisor,
+[Hogg](http://cosmo.nyu.edu/hogg/), who wrote blog posts about the previous
 AAS hack days
 ([2013](http://hoggresearch.blogspot.com/2013/01/aas-hack-day_10.html) and
 [2014](http://hoggresearch.blogspot.com/2014/01/aas-223-day-4-aas-hack-day.html)).
@@ -19,14 +19,14 @@ Hack days are a relatively new addition to this meeting and to the
 astronomical community but they are always fun and productive.
 This day was no exception!
 
-There were about 75 people in the room and about half had previously attended
-a hack day of some sort.
+There were about 75 people in the room and roughly half had previously
+attended a hack day of some sort.
 The day started with hack pitches then after a quick coffee break, we got down
 to work.
 The main point of this hack day is to spend a full day focusing on a single
-project that you've been wanting to work on or learn about but normally don't
-have time to do.
-The hacks are by no means required to be code related but for practical and
+project that you don't normally have time for but that you've been wanting to
+work on or learn about.
+The hacks are by no means required to be code-related but for practical and
 sociological reasons, they often are.
 
 In the afternoon, after about five hours of hacking, we regrouped and everyone
@@ -45,14 +45,15 @@ I don't have space to list all the awesome hacks but here are a few examples:
    distribution of question askers at the meeting. One key result from this
    year's analysis was that if the *first* question is asked by a woman, the
    gender distribution of subsequent questions is more representative of the
-   meeting overall (60% M / 40% F) versus the average (80% M / 20% F).
+   meeting's overall gender distribution (60% M / 40% F) versus the average
+   distribution of question askers over all sessions (80% M / 20% F).
    What causes of this difference?
    [[code](https://github.com/jradavenport/aas225-gender),
    [data](https://github.com/jradavenport/aas225-gender/blob/master/data.csv),
    and
    [analysis](http://nbviewer.ipython.org/github/jradavenport/aas225-gender/blob/master/analysis.ipynb)]
 
-3. Partly to answer some of the questions raised by result like the above
+3. Partly to answer some of the questions raised by results like the above
    gender study in more detail, Schwamb (ASIAA), Salyk (NOAO), and Avestruz
    (Yale) developed [a
    survey](https://docs.google.com/forms/d/1mPxiaTIKUBl2BAt1KF6OWJ2LOdsQCdfMk-KTbn9vMgc/viewform?c=0&w=1)
@@ -72,22 +73,23 @@ I don't have space to list all the awesome hacks but here are a few examples:
    (CUNY/AMNH), and Lee (Harvard) started a collaborative playlist on
    Spotify for astronomy related tunes. It currently has 637 songs (two days
    of constant listening and Total Eclipse of the Heart is only on there about
-   six times) from many different contributors. Add your favorite
-   astrosongs now!
+   six times) from many different contributors. Add your favorite astrosongs
+   now!
    [[playlist](https://play.spotify.com/user/djcarlysagan/playlist/5BLvisuoHWxYaoXaLBN2WD)]
 
 6. To study gendered trends in publication practices and coauthorship, Bianco
-   (NYU), Morehead (PSU), Wang (NYU) [ADD MORE NAMES HERE] downloaded about
-   5000 papers from ADS and estimated the genders of the first few authors
-   using first names. Most of the hack day was spent scraping and managing the
+   (NYU), Morehead (PSU), Wang (NYU) Li (Swarthmore), Senchyna (UW), and Lee
+   (Harvard) downloaded about 5000 papers from ADS and estimated the genders
+   of the first few authors using first names. Most of the hack day was spent
+   scraping and managing the
    data (that's called "data science") so they didn't have time to come to any
    solid conclusions but they did produce an awesome dataset.
    [[code](https://github.com/fedhere/ADSgenderclustering)]
 
 9. Rogers & Donaldson (MAST) collaborated to put together a prototype of a
-   very lightweight visual interface to the combined MAST catalogs and
-   imaging aimed at mobile users. I think that this will be useful for both
-   research and teaching.
+   very lightweight visual interface to the MAST catalogs and imaging. The app
+   is web-based but it is designed to used on mobile devices.
+   I think that this will be useful for both research and teaching.
 
 7. VanderPlas (UW), Douglas (Columbia), Morton (Princeton), Peters (Drexel),
    and Hollowood (UCSC) worked together to develop a consistent API for time
