@@ -5,7 +5,6 @@ Slug: aas-hack-day
 Summary: The wrap-up post from the hack day at the 225th AAS meeting.
 Image: /images/hack-day.jpg
 Position: bottom
-Status: draft
 
 At the last minute, my friend [Adrian P-W](http://adrian.pw/) and I found
 ourselves in charge of chairing the Hack Day at the 225th meeting of the
