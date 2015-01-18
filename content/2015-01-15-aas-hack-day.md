@@ -14,7 +14,9 @@ This is a job usually left to my charismatic PhD advisor,
 [Hogg](http://cosmo.nyu.edu/hogg/), who wrote blog posts about the previous
 AAS hack days
 ([2013](http://hoggresearch.blogspot.com/2013/01/aas-hack-day_10.html) and
-[2014](http://hoggresearch.blogspot.com/2014/01/aas-223-day-4-aas-hack-day.html)).
+[2014](http://hoggresearch.blogspot.com/2014/01/aas-223-day-4-aas-hack-day.html);
+you can also find [summary posts on
+Astrobetter](http://www.astrobetter.com/tag/hackday/)).
 Hack days are a relatively new addition to this meeting and to the
 astronomical community but they are always fun and productive.
 This day was no exception!
@@ -76,7 +78,8 @@ I don't have space to list all the awesome hacks but here are a few examples:
    of constant listening and Total Eclipse of the Heart is only on there about
    six times) from many different contributors. Add your favorite astrosongs
    now!
-   [[playlist](https://play.spotify.com/user/djcarlysagan/playlist/5BLvisuoHWxYaoXaLBN2WD)]
+   [[playlist](https://play.spotify.com/user/djcarlysagan/playlist/5BLvisuoHWxYaoXaLBN2WD), and
+    [instructions](http://www.astrobetter.com/wiki/tiki-index.php?page=Astronomy+Songs)]
 
 6. To study gendered trends in publication practices and coauthorship, Bianco
    (NYU), Morehead (PSU), Wang (NYU) Li (Swarthmore), Senchyna (UW), and Lee
@@ -110,9 +113,19 @@ I don't have space to list all the awesome hacks but here are a few examples:
    forgive him.
    [[code access](mailto:Douglas.Finkbeiner@gmail.com)]
 
-A huge thanks goes to Kelle Cruz (Hunter/AMNH) and Meg Schwamb (ASIAA) for
-organizing everything and making this happen and to our sponsors Northrop
-Grumman and LSST for the snacks and lunch.
+A huge thanks goes to Kelle Cruz (CUNY/AMNH) and Meg Schwamb (ASIAA) for
+organizing the event, Debbie Kovalsky (AAS Meetings) for logistics, and our
+sponsors, Northrop Grumman and LSST, for the snacks and lunch.
 I'd also like to thank everyone who attended for making it such a fun day.
-I'm looking forward to next year when it will hopefully be on Friday so even
-more people can attend!
+
+Please consider joining us for Hack Day at AAS 227 in [sunny
+Florida](http://www.marriott.com/hotel-info/mcogp-gaylord-palms-resort-and-convention-center/gaylord-palms-entertainment/gwzd4ug/seasonal.mi)!
+Programming expertise is *not* necessary and hacks do not even need to be code
+based.
+One example might be [to make more knitted astronomy
+mascots](https://twitter.com/ashpags/status/552709347944312833) at the Hack
+Days.
+If you have any questions about hack day, want to participate but have
+hesitations, please feel free to reach out to
+[me](https://tiwtter.com/exoplaneteer), [Kelle](https://twitter.com/kellecruz)
+or any of the other organizers.
