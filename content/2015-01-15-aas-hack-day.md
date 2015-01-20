@@ -1,5 +1,5 @@
 Title: The Hack Day at AAS 225
-Date: 2015-01-15 0:00
+Date: 2015-01-18 0:00
 Category: Hacking
 Slug: aas-hack-day
 Summary: The wrap-up post from the hack day at the 225th AAS meeting.
@@ -20,8 +20,15 @@ Hack days are a relatively new addition to this meeting and to the
 astronomical community but they are always fun and productive.
 This day was no exception!
 
-There were about 75 people in the room and roughly half had previously
-attended a hack day of some sort.
+Before the hack day, there were [boards set up in the poster room at the
+meeting](https://twitter.com/exoplaneteer/status/552917957404160000) and [a
+page on the Astrobetter
+wiki](http://www.astrobetter.com/wiki/tiki-index.php?page=AASHackDay) for
+people to list their hack ideas.
+There was also quite a bit of activity on [the Twitter
+feed](https://twitter.com/hashtag/hackaas?f=realtime).
+Then, on the day, there were about 75 people in the room and roughly half had
+previously attended a hack day of some sort.
 The day started with hack pitches then after a quick coffee break, we got down
 to work.
 The main point of this hack day is to spend a full day focusing on a single
@@ -70,6 +77,7 @@ I don't have space to list all the awesome hacks but here are a few examples:
    (that she wrote), Ash (Columbia) figured out how to use Worldwide Telescope
    to render the constellations in 3D and view them from different angles.
    It turns out that constellations are just projection effects ;-).
+   [[video](https://www.youtube.com/watch?v=e_q6yaB9HAU)]
 
 5. For all of your music discovery needs, DJ Carly Sagan (NYC), Rice
    (CUNY/AMNH), and Lee (Harvard) started a collaborative playlist on
@@ -126,5 +134,5 @@ mascots](https://twitter.com/ashpags/status/552709347944312833) at the Hack
 Days.
 If you have any questions about hack day, want to participate but have
 hesitations, please feel free to reach out to
-[me](https://tiwtter.com/exoplaneteer), [Kelle](https://twitter.com/kellecruz)
+[me](https://twitter.com/exoplaneteer), [Kelle](https://twitter.com/kellecruz)
 or any of the other organizers.
