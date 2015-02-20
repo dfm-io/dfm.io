@@ -1,18 +1,13 @@
 {% extends "base.html" %}
-{% block title %}Dan Foreman-Mackey{% endblock %}
-{% block head %}
-    {{ super() }}
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/page.css" type="text/css" />
-{% endblock %}
-
+{% block title %}Dan Foreman-Mackey's Blog{% endblock %}
 {% block content %}
 
-{% include "topavatar.html" %}
-<div class="container">
+<section>
 
-    <h1>Blog</h1>
+    <h2>Blog</h2>
+    This is where I occasionally write things about data analysis and stuff.
 
-    <ul class="projects">
+    <ul>
     {% for article in dates %}
     <li>
     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a> &mdash;
@@ -21,6 +16,6 @@
     {% endfor %}
     </ul>
 
-</div>
+</section>
 
 {% endblock %}

@@ -1,25 +1,12 @@
 {% extends "base.html" %}
 {% block title %}Dan Foreman-Mackey's {{ page.title }}{% endblock %}
-{% block head %}
-    {{ super() }}
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/page.css" type="text/css" />
-{% endblock %}
-
 {% block content %}
 
-<div class="container">
-    <div class="topavatar">
-        <img src="{{ SITEURL }}/theme/images/avatar.png" alt="me">
-    </div>
-</div>
+<section>
 
-{% include "topbar.html" %}
-
-<div class="container">
-    <h1 class="page-title">{{ page.title }}</h1>
-
+    <h2>{{ page.title }}</h2>
     {{ page.content }}
 
-</div>
+</section>
 
 {% endblock %}

@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>{% block title %}Dan Foreman-Mackey{% endblock %}</title>
 <meta id="viewport" name="viewport" content="width=500" />
@@ -13,25 +14,39 @@
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/base.css" type="text/css" />
 <link rel="stylesheet" href="{{ SITEURL }}/theme/css/code.css" type="text/css" />
 
+<link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/avatar.png" sizes="200x200">
+<link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon.png" sizes="32x32">
+
 {% block head %}{% endblock %}
 
 </head>
 <body>
 
-{% block content %}{% endblock %}
+<div class="content">
 
-<div class="container bottom">
-    <hr>
-    {% block bottomtext %}{% endblock %}
-    <p>
-        All content copyright 2014 Dan Foreman-Mackey unless otherwise noted.
-        Licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.
-    </p>
-    <p>
-    Find me on <a href="https://twitter.com/exoplaneteer">Twitter</a>,
-    <a href="https://github.com/dfm">GitHub</a>,
-    or <a href="mailto:danfm@nyu.edu">drop me a line</a>.
-    </p>
+    <header>
+        <img src="{{ SITEURL }}/theme/images/avatar.png" alt="me">
+        <h1><a href="{{ SITEURL }}/">Dan Foreman-Mackey</a></h1>
+        <ul>
+            <li><a href="{{ SITEURL }}/#pubs">Publications</a></li>
+            <li><a href="{{ SITEURL }}/#talks">Talks</a></li>
+            <li><a href="{{ SITEURL }}/#code">Code</a></li>
+            <li><a href="{{ SITEURL }}/cv.pdf">CV</a></li>
+            <li><a href="{{ SITEURL }}/posts/">Blog</a></li>
+        </ul>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+
+    Copyright 2014, 2015 Dan Foreman-Mackey unless otherwise noted.<br>
+    Licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><b>Creative Commons</b></a>.<br>
+    Find me on <a href="https://twitter.com/exoplaneteer">Twitter</a> or
+    <a href="mailto:danfm@nyu.edu">drop me a line</a>.
+
+    </footer>
+
 </div>
 
 {% include "analytics.html" %}
