@@ -14,6 +14,7 @@ STATIC_PATHS = [
     "LICENSE",
     "downloads",
     "drafts",
+    "thesis",
     "cv.pdf",
 ]
 IGNORE_FILES = [
