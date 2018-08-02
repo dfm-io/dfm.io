@@ -2,7 +2,7 @@ Title: The Hack Day at AAS 225
 Date: 2015-01-18 0:00
 Category: Hacking
 Slug: aas-hack-day
-Summary: The wrap-up post from the hack day at the 225th AAS meeting.
+Summary: The wrap-up post from the hack day at the 225th AAS meeting
 Image: /images/hack-day.jpg
 Position: bottom
 

@@ -2,7 +2,7 @@ Title: Python modules in C
 Date: 2012-08-03 0:00
 Category: Tutorial
 Slug: python-c-extensions
-Summary: How to roll your own Python modules in C.
+Summary: How to roll your own Python modules in C
 Image: /images/chi2.jpg
 
 Writing your own C extensions to Python can seem like a pretty daunting task
