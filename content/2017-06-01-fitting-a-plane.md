@@ -8,6 +8,6 @@ Summary: with general Gaussian measurement covariances
 > [here](/downloads/notebooks/fitting-a-plane.ipynb).
 >
 > This post can be cited with the DOI:
-> [10.5281/zenodo.15856](https://doi.org/10.5281/zenodo.15856)
+> [10.5281/zenodo.3221478](https://doi.org/10.5281/zenodo.3221477)
 
 {% notebook fitting-a-plane.ipynb cells[1:] %}
