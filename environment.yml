@@ -1,0 +1,9 @@
+name: cenv
+channels:
+  - defaults
+dependencies:
+  - pip
+  - ipython
+  - nbconvert
+  - pip:
+    - -r requirements.txt

@@ -8,3 +8,4 @@ output
 cache
 _nb_header.html
 __pycache__
+environment.lock
