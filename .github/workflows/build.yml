@@ -37,4 +37,4 @@ jobs:
         git add .
         git status
         git -c user.name='dfm.io-bot' -c user.email='foreman.mackey+dfm.io@gmail.com' commit -m "updating website"
-        git push -q https://astrodatagroup-bot:${GITHUB_TOKEN}@github.com/dfm/dfm.github.com.git
+        git push -q https://dfm:${GITHUB_TOKEN}@github.com/dfm/dfm.github.com.git
