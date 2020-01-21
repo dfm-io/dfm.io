@@ -1,2 +1,4 @@
 pelican
 markdown
+ipython
+nbconvert
