@@ -17,7 +17,7 @@ jobs:
           git submodule update --init --force --recursive
       - name: Get the existing site
         run: |
-          git clone --branch master --single-branch https://github.com/dfm/dfm.github.com output
+          git clone --branch main --single-branch https://github.com/dfm/dfm.github.com output
       - name: Set up Python
         uses: actions/setup-python@v1
         with:
