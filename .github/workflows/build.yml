@@ -29,12 +29,15 @@ jobs:
           hugo-version: "0.80.0"
           extended: true
       - name: Build
-        run: hugo --minify
+        run: hugo
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          external_repository: dfm/dfm.github.com
+          publish_branch: hugo
           publish_dir: ./public
+          cname: dfm.io
 
       # - name: Get the existing site
       #   run: |
