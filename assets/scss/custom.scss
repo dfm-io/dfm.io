@@ -19,3 +19,12 @@ a:hover {
 .post__content div {
   overflow-x: auto;
 }
+
+code.has-jax {
+  -webkit-font-smoothing: antialiased;
+  background: inherit !important;
+  border: none !important;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}

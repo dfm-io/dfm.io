@@ -3,6 +3,7 @@
 
 # Ref: https://www.datisticsblog.com/2018/08/post_with_jupyter/
 
+import re
 import glob
 from nbconvert.preprocessors import Preprocessor
 from nbconvert import MarkdownExporter
@@ -10,6 +11,9 @@ from pathlib import Path
 from traitlets.config import Config
 
 import nbformat
+
+inline_pat = re.compile(r"\$(.+?)\$", flags=re.M | re.S)
+block_pat = re.compile(r"\$\$(.+?)\$\$", flags=re.M | re.S)
 
 
 class CustomPreprocessor(Preprocessor):
@@ -30,6 +34,11 @@ class CustomPreprocessor(Preprocessor):
     def preprocess_cell(self, cell, resources, cell_index):
         if cell.cell_type == "code":
             cell.source = cell.source.strip()
+        else:
+            text = "$$".join(
+                inline_pat.sub(r"`$\1$`", t) for t in cell.source.split("$$")
+            )
+            cell.source = block_pat.sub(r"<div>$$\1$$</div>", text)
         return cell, resources
 
 
