@@ -9,7 +9,7 @@ copyright = "© {year}"
   github = "https://github.com/dfm"
   email = "mailto:foreman.mackey@gmail.com"
   iconOrder = ["Twitter", "GitHub", "Email"]
-  showPageTitleInTOC = false
+  Description = "Dan Foreman-Mackey is an Associate Research Scientist at the Center for Computational Astrophysics in the Flatiron Institute at the Simons Foundation."
 
 [markup]
   [markup.highlight]
