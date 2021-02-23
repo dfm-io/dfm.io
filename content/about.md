@@ -15,7 +15,7 @@ population of these planets, and learn more about the variability of stars. I am
 also interested in the development of scientific software and open-source
 practices.
 
-## Code
+### Code
 
 I write a lot of code for work and in my spare time. All my projects live in
 [public repositories on GitHub](https://github.com/dfm). Here are some of my most popular research codes:
@@ -33,7 +33,7 @@ Unable to load of software.
 
 <ul id="codelist"></ul>
 
-## Publications
+### Publications
 
 My full list of publications is available
 [on ADS](http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?return_req=no_params&author=Foreman-Mackey&db_key=PRE)
