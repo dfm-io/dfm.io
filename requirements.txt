@@ -1,4 +1,0 @@
-pelican
-markdown
-ipython
-nbconvert
