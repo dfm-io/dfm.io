@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - hugo
 
 jobs:
   build:
@@ -11,30 +12,49 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Checkout submodules
-        run: |
-          git submodule sync --recursive
-          git submodule update --init --force --recursive
-      - name: Get the existing site
-        run: |
-          git clone --branch main --single-branch https://github.com/dfm/dfm.github.com output
-      - name: Set up Python
-        uses: actions/setup-python@v1
         with:
-          python-version: 3.7
-      - name: Install
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
+          submodules: recursive
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+      - name: Install Python dependencies
+        run: python -m pip install nbconvert nbformat
+      - name: Convert the Jupyter notebooks
+        run: scripts/render-notebooks
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.79.1"
       - name: Build
-        run: |
-          python -m pelican --ignore-cache content
+        run: hugo --minify
       - name: Deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        run: |
-          cd output
-          git add .
-          git status
-          git -c user.name='dfm.io-bot' -c user.email='foreman.mackey+dfm.io@gmail.com' commit -m "updating website"
-          git push -q https://dfm:${GITHUB_TOKEN}@github.com/dfm/dfm.github.com.git
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+
+      # - name: Get the existing site
+      #   run: |
+      #     git clone --branch main --single-branch https://github.com/dfm/dfm.github.com output
+      # - name: Set up Python
+      #   uses: actions/setup-python@v1
+      #   with:
+      #     python-version: 3.7
+      # - name: Install
+      #   run: |
+      #     python -m pip install --upgrade pip
+      #     python -m pip install -r requirements.txt
+      # - name: Build
+      #   run: |
+      #     python -m pelican --ignore-cache content
+      # - name: Deploy
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      #   run: |
+      #     cd output
+      #     git add .
+      #     git status
+      #     git -c user.name='dfm.io-bot' -c user.email='foreman.mackey+dfm.io@gmail.com' commit -m "updating website"
+      #     git push -q https://dfm:${GITHUB_TOKEN}@github.com/dfm/dfm.github.com.git
