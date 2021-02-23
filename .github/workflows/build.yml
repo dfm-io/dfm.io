@@ -35,6 +35,6 @@ jobs:
         with:
           personal_token: ${{ secrets.ACCESS_TOKEN }}
           external_repository: dfm/dfm.github.com
-          publish_branch: hugo
+          publish_branch: main
           publish_dir: ./public
           cname: dfm.io
