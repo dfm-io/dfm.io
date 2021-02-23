@@ -4,6 +4,8 @@ languageCode = "en-us"
 title = "Dan Foreman-Mackey"
 copyright = "© {year}"
 
+disqusShortname = "dfmio"
+
 [params]
   twitter = "https://twitter.com/exoplaneteer"
   github = "https://github.com/dfm"
