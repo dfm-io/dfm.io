@@ -1,0 +1,43 @@
+theme = "hugo-theme-codex"
+baseURL = "https://dfm.io"
+languageCode = "en-us"
+title = "Dan Foreman-Mackey"
+copyright = "© {year}"
+
+[params]
+  twitter = "https://twitter.com/exoplaneteer"
+  github = "https://github.com/dfm"
+  email = "mailto:foreman.mackey@gmail.com"
+  iconOrder = ["Twitter", "GitHub", "Email"]
+  showPageTitleInTOC = false
+
+[markup]
+  [markup.highlight]
+    codeFences = false
+
+  [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  identifier = "home"
+  name = " home"
+  title = "Home"
+  url = "/"
+
+[[menu.main]]
+  identifier = "about"
+  name = "about"
+  title = "About"
+  url = "/about"
+
+[[menu.main]]
+  identifier = "blog"
+  name = "blog"
+  title = "Blog"
+  url = "/posts"
+
+[[menu.main]]
+  identifier = "cv"
+  name = "cv"
+  title = "CV"
+  url = "https://github.com/dfm/cv"

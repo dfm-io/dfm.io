@@ -9,3 +9,7 @@ cache
 _nb_header.html
 __pycache__
 environment.lock
+_gen
+public
+*.ipynb.md
+static/posts
