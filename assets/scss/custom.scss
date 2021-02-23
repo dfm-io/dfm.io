@@ -1,5 +1,21 @@
+@import "overrides";
+
 .MathJax_Display,
 .MathJax_SVG_Display {
   overflow-y: hidden;
+  overflow-x: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: $primary;
+}
+
+a:hover {
+  color: $primary;
+}
+
+.post__content div {
   overflow-x: auto;
 }
