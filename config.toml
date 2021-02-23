@@ -2,7 +2,7 @@ theme = "hugo-theme-codex"
 baseURL = "https://dfm.io"
 languageCode = "en-us"
 title = "Dan Foreman-Mackey"
-copyright = "© {year}"
+copyright = "© 2014-{year} Dan Foreman-Mackey"
 
 [params]
   twitter = "https://twitter.com/exoplaneteer"
@@ -10,6 +10,7 @@ copyright = "© {year}"
   email = "mailto:foreman.mackey@gmail.com"
   iconOrder = ["Twitter", "GitHub", "Email"]
   Description = "Dan Foreman-Mackey is an Associate Research Scientist at the Center for Computational Astrophysics in the Flatiron Institute at the Simons Foundation."
+  customCss = ["css/custom.css"]
 
 [markup]
   [markup.highlight]
