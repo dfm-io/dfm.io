@@ -1,5 +1,5 @@
 theme = "hugo-theme-codex"
-baseURL = "https://dfm.io"
+baseURL = "https://dfm.io/"
 languageCode = "en-us"
 title = "Dan Foreman-Mackey"
 copyright = "© 2014-{year} Dan Foreman-Mackey"
@@ -42,3 +42,17 @@ copyright = "© 2014-{year} Dan Foreman-Mackey"
   name = "cv"
   title = "CV"
   url = "https://github.com/dfm/cv"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
