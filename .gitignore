@@ -14,3 +14,4 @@ public
 *.ipynb.md
 static/posts
 .snakemake
+results

@@ -4,5 +4,11 @@ dependencies:
   - python =3.10
   - numpy
   - matplotlib
+  - pandas
+  - emcee
+  - corner
   - nbconvert
   - ipykernel
+  - pip
+  - pip:
+    - pymc3
