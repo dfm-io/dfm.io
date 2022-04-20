@@ -13,3 +13,4 @@ _gen
 public
 *.ipynb.md
 static/posts
+.snakemake
