@@ -15,3 +15,4 @@ public
 static/posts
 .snakemake
 results
+posts/data

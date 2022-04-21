@@ -21,9 +21,7 @@ class CustomPreprocessor(Preprocessor):
         for index, cell in enumerate(nb.cells):
             if cell.cell_type == "code" and not cell.source:
                 nb.cells.pop(index)
-            elif cell.cell_type == "code" and cell.source.startswith(
-                "%matplotlib"
-            ):
+            elif cell.cell_type == "code" and cell.source.startswith("%matplotlib"):
                 nb.cells.pop(index)
             else:
                 nb.cells[index], resources = self.preprocess_cell(
