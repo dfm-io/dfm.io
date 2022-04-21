@@ -2,3 +2,7 @@ from snakemake.utils import min_version
 min_version("5.12.0")
 
 include: "rules/execute.smk"
+
+rule all:
+    input:
+        expand("results/posts/{notebook}.ipynb", notebook=NOTEBOOKS)

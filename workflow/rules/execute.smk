@@ -1,8 +1,12 @@
 import os
 import glob
 
-for filename in sorted(glob.glob("posts/*.ipynb")):
-    notebook = os.path.splitext(os.path.split(filename)[-1])[0]
+NOTEBOOKS = [
+    os.path.splitext(os.path.split(filename)[-1])[0]
+    for filename in sorted(glob.glob("posts/*.ipynb"))
+]
+
+for notebook in NOTEBOOKS:
     if os.path.exists("workflow/envs/%s.yml" % notebook):
         rule:
             input:
