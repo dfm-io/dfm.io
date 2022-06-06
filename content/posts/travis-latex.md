@@ -93,7 +93,3 @@ If you run into any issues, put them in the comments and let's try to debug.
 
 Thanks to [David W. Hogg for clarifications](https://github.com/dfm/dfm.io/pull/1).
 
-
-```python
-
-```

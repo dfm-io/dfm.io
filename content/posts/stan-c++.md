@@ -8,16 +8,6 @@ Math: true
 ---
 
 
-```python
-%matplotlib inline
-%config InlineBackend.figure_format = "retina"
-
-from matplotlib import rcParams
-rcParams["savefig.dpi"] = 100
-rcParams["figure.dpi"] = 100
-rcParams["font.size"] = 20
-```
-
 In this blog post, I'll demonstrate how to use a custom C++ function in a [Stan](http://mc-stan.org/) model using the Python interface [PyStan](http://mc-stan.org/interfaces/pystan.html). This was previously only possible using the R interface [RStan](http://mc-stan.org/interfaces/rstan.html) (see [an example here](https://cran.r-project.org/web/packages/rstan/vignettes/external.html)) so I hacked PyStan to make this possible in Python as well. You'll need to install [the 'feature-external-c++' branch of my fork of PyStan](https://github.com/dfm/pystan/tree/feature-external-c++) to make this work. This is unlikely to get merged into PyStan because there is a hope that this will one day be a feature of the core Stan language, but if you're impatient and need this now, read on!
 
 Since I'm an astronomer, I'll motivate this demo using a specific example from astronomy but I expect that this is more broadly applicable. The basic motivation is that I have some existing C++ code that implements my model and its derivatives so I don't want to have to re-write the model in the Stan language. Furthermore, part of the model requires solving a transcendental equation numerically; it's not obvious that applying autodiff to an iterative solver is a great idea, but the analytic gradients are trivial to evaluate.
@@ -67,7 +57,7 @@ plt.xlabel("phase");
 
 
     
-![png](stan-c%2B%2B_files/stan-c%2B%2B_3_0.png)
+![png](stan-c++_3_0.png)
     
 
 
@@ -376,7 +366,7 @@ plt.xlabel("phase");
 
 
     
-![png](stan-c%2B%2B_files/stan-c%2B%2B_17_0.png)
+![png](stan-c++_17_0.png)
     
 
 
@@ -442,7 +432,7 @@ corner.corner(samples, labels=labels);
 
 
     
-![png](stan-c%2B%2B_files/stan-c%2B%2B_23_0.png)
+![png](stan-c++_23_0.png)
     
 
 
@@ -471,7 +461,7 @@ plt.xlabel("phase");
 
 
     
-![png](stan-c%2B%2B_files/stan-c%2B%2B_25_0.png)
+![png](stan-c++_25_0.png)
     
 
 
@@ -550,6 +540,3 @@ model_autodiff = pystan.StanModel(model_code=model_code, allow_undefined=True,
 
 
 
-```python
-
-```
