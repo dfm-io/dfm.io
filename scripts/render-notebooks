@@ -47,7 +47,6 @@ class CustomPreprocessor(Preprocessor):
 def render_notebook(path, metadata):
     meta = yaml.safe_load(metadata)
     slug = meta["slug"]
-    print(slug)
 
     with path.open() as fp:
         notebook = nbformat.read(fp, as_version=4)
