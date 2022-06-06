@@ -37,6 +37,15 @@
     </item>
     
     <item>
+      <title>Dense mass matrices for PyMC3</title>
+      <link>https://dfm.io/posts/pymc3-mass-matrix/</link>
+      <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dfm.io/posts/pymc3-mass-matrix/</guid>
+      <description>In my work I often come across probabilistic models where there are strong correlations between parameters. This certainly isn&amp;rsquo;t a special feature of the problems that I work on, and the general advice from MCMC practitioners is that we should reparameterize our models in some form that removes the covariances, but this isn&amp;rsquo;t always practical. One of the reasons why emcee has been popular in astrophysics (I think) is that it uses an &amp;ldquo;affine invariant&amp;rdquo; algorithm.</description>
+    </item>
+    
+    <item>
       <title>emcee &#43; PyMC3</title>
       <link>https://dfm.io/posts/emcee-pymc3/</link>
       <pubDate>Tue, 21 Aug 2018 00:00:00 +0000</pubDate>
