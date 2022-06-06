@@ -6,7 +6,7 @@
 import re
 import tempfile
 from pathlib import Path
-from subprocess import check_call
+from subprocess import check_call, CalledProcessError
 
 import yaml
 import nbformat
@@ -23,9 +23,7 @@ class CustomPreprocessor(Preprocessor):
         for index, cell in enumerate(nb.cells):
             if cell.cell_type == "code" and not cell.source:
                 nb.cells.pop(index)
-            elif cell.cell_type == "code" and cell.source.startswith(
-                "%matplotlib"
-            ):
+            elif cell.cell_type == "code" and cell.source.startswith("%matplotlib"):
                 nb.cells.pop(index)
             else:
                 nb.cells[index], resources = self.preprocess_cell(
@@ -78,9 +76,14 @@ def process_repo(repo):
     print(f"===> Rendering {name} <===")
 
     with tempfile.TemporaryDirectory() as tmp:
-        check_call(
-            f"git clone --depth 1  --branch executed https://github.com/{name}.git {tmp}".split()
-        )
+        try:
+            check_call(
+                f"git clone --depth 1  --branch executed https://github.com/{name}.git {tmp}".split()
+            )
+
+        except CalledProcessError:
+            print(f"Failed to clone {name}")
+            return
 
         repo = Path(tmp)
         with (repo / "metadata.yml").open("r") as f:
