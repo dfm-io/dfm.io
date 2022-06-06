@@ -1,7 +1,7 @@
 ---
-Title: What if I want to reuse my Python functions?
-Date: 2021-03-18
-Slug: simple-python-module
+title: What if I want to reuse my Python functions?
+date: 2021-03-18
+slug: simple-python-module
 ---
 
 This post is an introduction to packaging Python code aimed at scientists

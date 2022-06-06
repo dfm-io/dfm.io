@@ -13,3 +13,5 @@ _gen
 public
 *.ipynb.md
 static/posts
+.hugo_build.lock
+content/posts/notebook.*

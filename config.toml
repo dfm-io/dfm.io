@@ -1,5 +1,6 @@
 theme = "hugo-theme-codex"
 baseURL = "https://dfm.io/"
+relativeURLs = true
 languageCode = "en-us"
 title = "Dan Foreman-Mackey"
 copyright = "© 2014-{year} Dan Foreman-Mackey"
