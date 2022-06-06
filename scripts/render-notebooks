@@ -4,13 +4,15 @@
 # Ref: https://www.datisticsblog.com/2018/08/post_with_jupyter/
 
 import re
-import glob
-from nbconvert.preprocessors import Preprocessor
-from nbconvert import MarkdownExporter
+import tempfile
 from pathlib import Path
-from traitlets.config import Config
+from subprocess import check_call
 
+import yaml
 import nbformat
+from nbconvert import MarkdownExporter
+from nbconvert.preprocessors import Preprocessor
+from traitlets.config import Config
 
 inline_pat = re.compile(r"\$(.+?)\$", flags=re.M | re.S)
 block_pat = re.compile(r"\$\$(.+?)\$\$", flags=re.M | re.S)
@@ -42,21 +44,26 @@ class CustomPreprocessor(Preprocessor):
         return cell, resources
 
 
-def render_notebook(path):
-    nb_path = Path(path)
-    with nb_path.open() as fp:
+def render_notebook(path, metadata):
+    meta = yaml.safe_load(metadata)
+    slug = meta["slug"]
+    print(slug)
+
+    with path.open() as fp:
         notebook = nbformat.read(fp, as_version=4)
 
     c = Config()
     c.MarkdownExporter.preprocessors = [CustomPreprocessor]
     markdown_exporter = MarkdownExporter(config=c)
     markdown, resources = markdown_exporter.from_notebook_node(notebook)
+    markdown = f"---\n{metadata.strip()}\n---\n\n" + markdown
 
-    with (Path("./content/posts") / (nb_path.name + ".md")).open("w") as f:
+    output = Path(f"./content/posts/notebook.{slug}.md")
+    with output.open("w") as f:
         f.write(markdown)
 
     if "outputs" in resources.keys():
-        out_path = Path("./static/posts") / nb_path.stem
+        out_path = Path(f"./static/posts/{slug}")
         if not out_path.exists():
             out_path.mkdir(parents=True)
         for key in resources["outputs"].keys():
@@ -64,6 +71,34 @@ def render_notebook(path):
                 f.write(resources["outputs"][key])
 
 
+def process_repo(repo):
+    name = repo["full_name"]
+    if not name.split("/")[1].startswith("post--"):
+        return
+
+    print(f"===> Rendering {name} <===")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        check_call(
+            f"git clone --depth 1  --branch executed https://github.com/{name}.git {tmp}".split()
+        )
+
+        repo = Path(tmp)
+        with (repo / "metadata.yml").open("r") as f:
+            metadata = f.read()
+        render_notebook(repo / "post.ipynb", metadata)
+
+
 if __name__ == "__main__":
-    for fn in glob.glob("static/downloads/notebooks/*.ipynb"):
-        render_notebook(fn)
+    import requests
+
+    url = "https://api.github.com/orgs/dfm-io/repos"
+    with requests.Session() as s:
+        while True:
+            r = s.get(url)
+            r.raise_for_status()
+            data = r.json()
+            list(map(process_repo, data))
+            url = r.links.get("next", {}).get("url")
+            if not url:
+                break
