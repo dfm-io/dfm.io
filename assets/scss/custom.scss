@@ -28,3 +28,7 @@ code.has-jax {
   padding: 0;
   margin: 0;
 }
+
+.dataframe::parent {
+  overflow-x: scroll;
+}
