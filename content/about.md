@@ -4,7 +4,7 @@ title: "About"
 
 ## Hi, I'm Dan Foreman-Mackey
 
-I'm an Associate Research Scientist at the [Flatiron
+I'm a Research Scientist at the [Flatiron
 Institute](https://www.simonsfoundation.org/flatiron/)'s [Center for
 Computational
 Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/).
