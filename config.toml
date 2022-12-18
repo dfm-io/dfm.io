@@ -7,9 +7,10 @@ copyright = "© 2014-{year} Dan Foreman-Mackey"
 
 [params]
   twitter = "https://twitter.com/exoplaneteer"
+  mastodon = "https://fosstodon.org/@dfm"
   github = "https://github.com/dfm"
   email = "mailto:dfm@dfm.io"
-  iconOrder = ["GitHub", "Email", "Twitter"]
+  iconOrder = ["GitHub", "Email", "Twitter", "Mastodon"]
   Description = "Dan Foreman-Mackey is an Associate Research Scientist at the Center for Computational Astrophysics in the Flatiron Institute at the Simons Foundation."
   customCss = ["css/custom.css"]
 
