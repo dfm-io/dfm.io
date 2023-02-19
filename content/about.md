@@ -63,7 +63,8 @@ Unable to load publication list.
     "10.3847/0004-6256/152/6/206": "https://github.com/dfm/peerless",
     "10.3847/1538-3881/aa9332": "https://github.com/dfm/celerite",
     "10.3847/2515-5172/aaaf6c": "https://github.com/dfm/celerite-grad",
-    "10.21105/joss.01864": "https://github.com/dfm/emcee"
+    "10.21105/joss.01864": "https://github.com/dfm/emcee",
+    "10.21105/joss.03285": "https://github.com/exoplanet-dev/exoplanet"
   };
 
   function formatAuthors(authors) {
