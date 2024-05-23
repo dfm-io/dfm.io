@@ -36,7 +36,7 @@ jobs:
 
       - name: Deploy to production
         if: ${{ github.ref == 'refs/heads/main' }}
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.ACCESS_TOKEN }}
           external_repository: dfm/dfm.github.com
@@ -46,7 +46,7 @@ jobs:
 
       - name: Deploy to test
         if: ${{ github.ref != 'refs/heads/main' }}
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
