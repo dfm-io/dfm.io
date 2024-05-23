@@ -27,7 +27,7 @@ jobs:
         run: scripts/render-notebooks
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.89.0"
           extended: true
