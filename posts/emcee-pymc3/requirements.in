@@ -1,0 +1,10 @@
+notebook
+jupyter
+ipykernel
+nbconvert
+numpy<1.22
+scipy
+matplotlib
+emcee
+corner
+pymc3

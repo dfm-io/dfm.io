@@ -15,3 +15,5 @@ public
 static/posts
 .hugo_build.lock
 content/posts/notebook.*
+!.python-version
+executed

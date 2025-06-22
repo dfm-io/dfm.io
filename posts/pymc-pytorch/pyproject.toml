@@ -1,0 +1,17 @@
+[project]
+name = "pymc-pytorch"
+version = "0"
+requires-python = ">=3.9"
+dependencies = [
+    "h5py>=3.7.0",
+    "ipykernel>=6.13.0",
+    "matplotlib>=3.5.2",
+    "nbconvert>=6.5.0",
+    "numpy<1.22",
+    "pymc3>=3.11.5",
+    "scipy>=1.7.3",
+    "torch>=1.11.0",
+]
+
+[tool.uv]
+exclude-newer = "2023-06-02T00:00:00Z"

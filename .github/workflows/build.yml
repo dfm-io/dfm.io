@@ -1,4 +1,4 @@
-name: Build site
+name: Build
 
 on:
   push:
@@ -7,32 +7,66 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read # to fetch code
+  actions: write # to cancel previous workflows
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  build:
-    concurrency: build-${{ github.ref }}
-    name: Build
+  generate-matrix:
+    name: "Generate build matrix"
     runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - id: set-matrix
+        run: python scripts/generate_matrix.py >> $GITHUB_OUTPUT
+
+  run:
+    name: "Execute post: ${{ matrix.post }}"
+    needs: generate-matrix
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{ fromJson(needs.generate-matrix.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: |
+          cd posts/${{ matrix.post }}
+          uv run jupyter nbconvert --to notebook --output=${{ matrix.post }}.ipynb --execute post.ipynb
+      - uses: actions/upload-artifact@v4
+        if: ${{ always() }}
+        with:
+          name: ${{ matrix.post }}
+          path: posts/${{ matrix.post }}/${{ matrix.post }}.ipynb
+
+  build-site:
+    needs: run
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # to push to gh-pages
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/download-artifact@v4
         with:
-          python-version: "3.9"
-      - name: Install Python dependencies
-        run: python -m pip install requests nbconvert nbformat pyyaml
-      - name: Convert the Jupyter notebooks
-        run: scripts/render-notebooks
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+          merge-multiple: true
+          path: executed
+      - uses: astral-sh/setup-uv@v6
+      - run: uv run scripts/render_notebooks.py
+      - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.89.0"
           extended: true
-      - name: Build
-        run: hugo
+      - run: hugo
 
       - name: Deploy to production
         if: ${{ github.ref == 'refs/heads/main' }}

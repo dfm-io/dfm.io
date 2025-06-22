@@ -1,0 +1,18 @@
+[project]
+name = "pymc3-mass-matrix"
+version = "0"
+requires-python = ">=3.9"
+dependencies = [
+    "corner>=2.2.2",
+    "ipykernel>=6.23.2",
+    "jupyter>=1.0.0",
+    "matplotlib>=3.7.1",
+    "nbconvert>=7.6.0",
+    "notebook>=6.5.4",
+    "numpy<1.22",
+    "pymc3>=3.11.5",
+    "scipy>=1.7.3",
+]
+
+[tool.uv]
+exclude-newer = "2023-06-22T00:00:00Z"

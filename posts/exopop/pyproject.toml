@@ -1,0 +1,21 @@
+[project]
+name = "exopop"
+version = "0"
+requires-python = ">=3.12"
+dependencies = [
+    "corner>=2.2.3",
+    "emcee>=3.1.6",
+    "ipykernel>=6.29.5",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.9.4",
+    "nbconvert>=7.16.6",
+    "notebook>=7.4.3",
+    "numpy>=2.0.2",
+    "pandas>=2.2.3",
+    "requests>=2.32.3",
+    "scipy>=1.13.1",
+    "tables>=3.10.2",
+]
+
+[tool.uv]
+exclude-newer = "2025-06-22T00:00:00Z"
