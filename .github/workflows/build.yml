@@ -23,6 +23,13 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/cache/restore@v4
+        with:
+          path: executed
+          key: ${{ runner.os }}-posts-${{ github.head_ref || github.ref }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-posts-${{ github.head_ref || github.ref }}-
+            ${{ runner.os }}-posts-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.13"
@@ -37,18 +44,44 @@ jobs:
       matrix: ${{ fromJson(needs.generate-matrix.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
+        if: ${{ matrix.post != 'placeholder' }}
       - uses: astral-sh/setup-uv@v6
+        if: ${{ matrix.post != 'placeholder' }}
       - run: |
           cd posts/${{ matrix.post }}
           uv run jupyter nbconvert --to notebook --output=${{ matrix.post }}.ipynb --execute post.ipynb
+        if: ${{ matrix.post != 'placeholder' }}
       - uses: actions/upload-artifact@v4
-        if: ${{ always() }}
+        if: ${{ matrix.post != 'placeholder' && always() }}
         with:
           name: ${{ matrix.post }}
           path: posts/${{ matrix.post }}/${{ matrix.post }}.ipynb
 
+  cache-posts:
+    needs: run
+    name: "Cache executed posts"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: executed
+          key: ${{ runner.os }}-posts-${{ github.head_ref || github.ref }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-posts-${{ github.head_ref || github.ref }}-
+            ${{ runner.os }}-posts-
+      - uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+          path: executed
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: python scripts/generate_matrix.py checksums
+
   build-site:
     needs: run
+    name: "Build and deploy site"
     runs-on: ubuntu-latest
     permissions:
       contents: write # to push to gh-pages
