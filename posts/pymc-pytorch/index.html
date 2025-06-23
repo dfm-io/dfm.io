@@ -305,7 +305,7 @@ NUTS: [logs, b, m]
   <progress value='6000' class='' max='6000' style='width:300px; height:20px; vertical-align: middle;'></progress>
   100.00% [6000/6000 00:15&lt;00:00 Sampling chain 1, 0 divergences]
 </div>
-<pre><code>Sampling 2 chains for 5_000 tune and 1_000 draw iterations (10_000 + 2_000 draws total) took 32 seconds.
+<pre><code>Sampling 2 chains for 5_000 tune and 1_000 draw iterations (10_000 + 2_000 draws total) took 31 seconds.
 </code></pre>
 <p>Note that unlike the TensorFlow implementation, there&rsquo;s no problem using multiple cores with this model and we actually get more than a factor of two increase in efficiency (probably because PyTorch has less Python overhead per call).</p>
 <p>For comparison, we can reimplement the same model directly in PyMC3:</p>
@@ -567,9 +567,9 @@ Either way, I&rsquo;d love to hear if you have any feedback, tips, questions, pi
 
  <div class="pagination">
   
-    <a class="pagination__item" href="https://dfm.io/posts/pymc3-mass-matrix/">
+    <a class="pagination__item" href="https://dfm.io/posts/emcee-pymc3/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Dense mass matrices for PyMC3</span>
+        <span class="pagination__title">emcee &#43; PyMC3</span>
     </a>
   
 

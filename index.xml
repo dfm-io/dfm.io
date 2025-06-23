@@ -7,16 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2014-{year} Dan Foreman-Mackey</copyright>
-    <lastBuildDate>Thu, 28 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dfm.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>An astronomer&#39;s introduction to NumPyro</title>
-      <link>https://dfm.io/posts/intro-to-numpyro/</link>
-      <pubDate>Thu, 28 Jul 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://dfm.io/posts/intro-to-numpyro/</guid>
-      <description>Over the past year or so, I&amp;rsquo;ve been using JAX extensively for my research, and I&amp;rsquo;ve also been encouraging other astronomers to give it a try. In particular, I&amp;rsquo;ve been using JAX as the computation engine for probabilistic inference tasks. There&amp;rsquo;s more to it, but one way that I like to think about JAX is as NumPy with just-in-time compilation and automatic differentiation. The just-in-time compilation features of JAX can be used to speed up you NumPy computations by removing some Python overhead and by executing it on your GPU.</description>
-    </item>
-    
+    <lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dfm.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What if I want to reuse my Python functions?</title>
       <link>https://dfm.io/posts/simple-python-module/</link>
@@ -46,15 +37,6 @@
     </item>
     
     <item>
-      <title>Dense mass matrices for PyMC3</title>
-      <link>https://dfm.io/posts/pymc3-mass-matrix/</link>
-      <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://dfm.io/posts/pymc3-mass-matrix/</guid>
-      <description>In my work I often come across probabilistic models where there are strong correlations between parameters. This certainly isn&amp;rsquo;t a special feature of the problems that I work on, and the general advice from MCMC practitioners is that we should reparameterize our models in some form that removes the covariances, but this isn&amp;rsquo;t always practical. One of the reasons why emcee has been popular in astrophysics (I think) is that it uses an &amp;ldquo;affine invariant&amp;rdquo; algorithm.</description>
-    </item>
-    
-    <item>
       <title>emcee &#43; PyMC3</title>
       <link>https://dfm.io/posts/emcee-pymc3/</link>
       <pubDate>Tue, 21 Aug 2018 00:00:00 +0000</pubDate>
@@ -70,16 +52,6 @@
       
       <guid>https://dfm.io/posts/pymc-tensorflow/</guid>
       <description>the most ambitious crossover event in history</description>
-    </item>
-    
-    <item>
-      <title>Autocorrelation time estimation</title>
-      <link>https://dfm.io/posts/autocorr/</link>
-      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://dfm.io/posts/autocorr/</guid>
-      <description>This is a cross post from the new emcee documentation.
-In this tutorial, we will discuss a method for convincing yourself that your chains are sufficiently converged. This can be a difficult subject to discuss because it isn&amp;rsquo;t formally possible to guarantee convergence for any but the simplest models, and therefore any argument that you make will be circular and heuristic. However, some discussion of autocorrelation analysis is (or should be!</description>
     </item>
     
     <item>
