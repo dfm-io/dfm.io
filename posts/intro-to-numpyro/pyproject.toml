@@ -1,0 +1,27 @@
+[project]
+name = "intro-to-numpyro"
+version = "0"
+requires-python = ">=3.10"
+dependencies = [
+    "jax>=0.4.11",
+    "jaxlib>=0.4.11",
+    "numpyro-ext",
+    "numpyro>=0.12.1",
+    "notebook>=6.5.4",
+    "jupyter>=1.0.0",
+    "ipykernel>=6.23.1",
+    "nbconvert>=7.4.0",
+    "numpy>=1.24.3",
+    "scipy>=1.10.1",
+    "matplotlib>=3.7.1",
+    "astropy>=5.3",
+    "arviz>=0.15.1",
+    "corner>=2.2.2",
+    "gaiadr3-zeropoint>=0.0.4",
+]
+
+[tool.uv]
+exclude-newer = "2023-06-02T00:00:00Z"
+
+[tool.uv.sources]
+numpyro-ext = { git = "https://github.com/dfm/numpyro-ext", rev = "8a777010e2b4eb135493cf984b8a9a40e2d99a90" }

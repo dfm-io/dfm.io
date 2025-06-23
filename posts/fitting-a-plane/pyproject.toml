@@ -1,0 +1,18 @@
+[project]
+name = "fitting-a-plane"
+version = "0"
+requires-python = ">=3.12"
+dependencies = [
+    "corner>=2.2.3",
+    "emcee>=3.1.6",
+    "ipykernel>=6.29.5",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.3",
+    "nbconvert>=7.16.6",
+    "notebook>=7.4.3",
+    "numpy>=2.3.1",
+    "scipy>=1.15.3",
+]
+
+[tool.uv]
+exclude-newer = "2025-06-22T00:00:00Z"
