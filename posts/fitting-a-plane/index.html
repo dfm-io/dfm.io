@@ -38,7 +38,7 @@
     <link type="text/css" rel="stylesheet" href="../../css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
-    <link type="text/css" rel="stylesheet" href="../../css/custom.min.ababf9469c50f82854b25f46557a3ab4d683728134d6c7a55f0169a9446b66cd.css" integrity="sha256-q6v5RpxQ&#43;ChUsl9GVXo6tNaDcoE01selXwFpqURrZs0="/>
+    <link type="text/css" rel="stylesheet" href="../../css/custom.min.1f57f8800830abb72375a261f1dce94fd4baa8d1e1cb788d1a2c0961fe963544.css" integrity="sha256-H1f4gAgwq7cjdaJh8dzpT9S6qNHhy3iNGiwJYf6WNUQ="/>
   
   
    
@@ -182,7 +182,9 @@ ax.set_ylim(-2, 12)
 ax.set_xlabel(&quot;x&quot;)
 ax.set_ylabel(&quot;y&quot;);
 </code></pre>
-<p><img src="output_1_0.png" alt="png"></p>
+<pre><code>Matplotlib is building the font cache; this may take a moment.
+</code></pre>
+<p><img src="output_1_1.png" alt="png"></p>
 <p>In this figure, you&rsquo;re seeing the simulated dataset with its error ellipses shown in black.
 The true linear relation that was used to simulate the data is shown in blue.</p>
 <h2 id="naïve-sampling">Naïve sampling<a class="anchor" href="#naïve-sampling">#</a></h2>
@@ -512,11 +514,17 @@ corner.corner(
     truths=[m_true, b_true, np.log(lambda_true)],
 );
 </code></pre>
-<pre><code>7352 independent samples of m
+<pre><code>&lt;&gt;:35: SyntaxWarning: invalid escape sequence '\l'
+&lt;&gt;:35: SyntaxWarning: invalid escape sequence '\l'
+/tmp/ipykernel_2143/3914491319.py:35: SyntaxWarning: invalid escape sequence '\l'
+  labels=[&quot;m&quot;, &quot;b&quot;, &quot;$\ln\lambda$&quot;],
+
+
+7352 independent samples of m
 7855 independent samples of b
 4381 independent samples of lambda
 </code></pre>
-<p><img src="output_17_1.png" alt="png"></p>
+<p><img src="output_17_2.png" alt="png"></p>
 <p>We can compare this sampling to the previous on (without scatter) by plotting some samples of the model in the &ldquo;data&rdquo; space.
 You can see that the constaints are wider than previously, but things seemed to have worked well.</p>
 <pre><code class="language-python">fig, ax = plt.subplots(1, 1, figsize=(5, 5))
@@ -724,12 +732,18 @@ corner.corner(
     truths=np.append(m_true, [b_true, np.log(lambda_true)]),
 );
 </code></pre>
-<pre><code>6760 independent samples of m1
-7442 independent samples of m2
-7049 independent samples of b
-6926 independent samples of ln(lambda)
+<pre><code>&lt;&gt;:37: SyntaxWarning: invalid escape sequence '\l'
+&lt;&gt;:37: SyntaxWarning: invalid escape sequence '\l'
+/tmp/ipykernel_2143/1785233684.py:37: SyntaxWarning: invalid escape sequence '\l'
+  labels=[&quot;$m_1$&quot;, &quot;$m_2$&quot;, &quot;b&quot;, &quot;$\ln\lambda$&quot;],
+
+
+7138 independent samples of m1
+7247 independent samples of m2
+6841 independent samples of b
+6925 independent samples of ln(lambda)
 </code></pre>
-<p><img src="output_22_1.png" alt="png"></p>
+<p><img src="output_22_2.png" alt="png"></p>
 <p>If you made it this far, you might notice that I don&rsquo;t really have a reasonable prior for the slopes.
 The current prior (uniform in <code>$\vec{m}$</code>) will have the same problems that <a href="http://jakevdp.github.io/blog/2014/06/14/frequentism-and-bayesianism-4-bayesian-in-python/#Prior-on-Slope-and-Intercept" 
   
@@ -741,7 +755,7 @@ The result is similar to the previous result from <a href="https://arxiv.org/abs
   
    target="_blank" rel="noreferrer noopener" 
 >Hogg, Bovy, &amp; Lang (2010)</a>, but I have fixed a small mistake in their solution and generalized the method to higher dimensions, including intrinsic scatter.
-Hope this is helpful and please let me know of any mistakes in my work via the comments or <a href="https://github.com/dfm/dfm.io/issues" 
+Hope this is helpful and please let me know of any mistakes in my work via the comments or <a href="https://github.com/dfm-io/post--fitting-a-plane/issues" 
   
    target="_blank" rel="noreferrer noopener" 
 >GitHub issues</a>.</p>
@@ -848,10 +862,23 @@ Hope this is helpful and please let me know of any mistakes in my work via the c
         <div class="social-icons__icon" style="background-image: url('https://dfm.io/svg/twitter.svg')"></div>
       </a>
     
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Mastodon"
+        href="https://fosstodon.org/@dfm"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://dfm.io/svg/mastodon.svg')"></div>
+      </a>
+    
      
 </div>
 
-            <p>© 2014-2022 Dan Foreman-Mackey</p>
+            <p>© 2014-2025 Dan Foreman-Mackey</p>
           </footer>
           </div>
       </div>

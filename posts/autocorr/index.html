@@ -38,7 +38,7 @@
     <link type="text/css" rel="stylesheet" href="../../css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
-    <link type="text/css" rel="stylesheet" href="../../css/custom.min.ababf9469c50f82854b25f46557a3ab4d683728134d6c7a55f0169a9446b66cd.css" integrity="sha256-q6v5RpxQ&#43;ChUsl9GVXo6tNaDcoE01selXwFpqURrZs0="/>
+    <link type="text/css" rel="stylesheet" href="../../css/custom.min.1f57f8800830abb72375a261f1dce94fd4baa8d1e1cb788d1a2c0961fe963544.css" integrity="sha256-H1f4gAgwq7cjdaJh8dzpT9S6qNHhy3iNGiwJYf6WNUQ="/>
   
   
    
@@ -234,7 +234,12 @@ plt.xlabel(&quot;step number&quot;)
 plt.ylabel(&quot;$f$&quot;)
 plt.title(&quot;$\\tau_\mathrm{{true}} = {0:.0f}$&quot;.format(true_tau), fontsize=14);
 </code></pre>
-<p><img src="output_4_0.png" alt="png"></p>
+<pre><code>&lt;&gt;:29: SyntaxWarning: invalid escape sequence '\m'
+&lt;&gt;:29: SyntaxWarning: invalid escape sequence '\m'
+/tmp/ipykernel_2204/167104486.py:29: SyntaxWarning: invalid escape sequence '\m'
+  plt.title(&quot;$\\tau_\mathrm{{true}} = {0:.0f}$&quot;.format(true_tau), fontsize=14);
+</code></pre>
+<p><img src="output_4_1.png" alt="png"></p>
 <p>Now we&rsquo;ll estimate the empirical autocorrelation function for each of these parallel chains and compare this to the true function.</p>
 <pre><code class="language-python">def next_pow_two(n):
     i = 1
@@ -411,7 +416,12 @@ plt.xlabel(&quot;number of samples, $N$&quot;)
 plt.ylabel(r&quot;$\tau$ estimates&quot;)
 plt.legend(fontsize=14);
 </code></pre>
-<p><img src="output_17_0.png" alt="png"></p>
+<pre><code>&lt;&gt;:10: SyntaxWarning: invalid escape sequence '\&amp;'
+&lt;&gt;:10: SyntaxWarning: invalid escape sequence '\&amp;'
+/tmp/ipykernel_2204/933029486.py:10: SyntaxWarning: invalid escape sequence '\&amp;'
+  plt.loglog(N, gw2010, &quot;o-&quot;, label=&quot;G\&amp;W 2010&quot;)
+</code></pre>
+<p><img src="output_17_1.png" alt="png"></p>
 <p>As before, the short chains give absurd estimates of <code>$\tau$</code>, but the new method converges faster and with lower variance than the old method.
 The <code>$\tau = N/50$</code> line is also included as above as an indication of where we might start trusting the estimates.</p>
 <h2 id="what-about-shorter-chains">What about shorter chains?<a class="anchor" href="#what-about-shorter-chains">#</a></h2>
@@ -490,7 +500,12 @@ plt.xlabel(&quot;number of samples, $N$&quot;)
 plt.ylabel(r&quot;$\tau$ estimates&quot;)
 plt.legend(fontsize=14);
 </code></pre>
-<p><img src="output_21_0.png" alt="png"></p>
+<pre><code>&lt;&gt;:2: SyntaxWarning: invalid escape sequence '\&amp;'
+&lt;&gt;:2: SyntaxWarning: invalid escape sequence '\&amp;'
+/tmp/ipykernel_2204/652797860.py:2: SyntaxWarning: invalid escape sequence '\&amp;'
+  plt.loglog(N, gw2010, &quot;o-&quot;, label=&quot;G\&amp;W 2010&quot;)
+</code></pre>
+<p><img src="output_21_1.png" alt="png"></p>
 <p>This figure is the same as the previous one, but we&rsquo;ve added the maximum likelihood estimates for <code>$\tau$</code> in green.
 In this case, this estimate seems to be robust even for very short chains with <code>$N \sim \tau$</code>.</p>
 
@@ -596,10 +611,23 @@ In this case, this estimate seems to be robust even for very short chains with <
         <div class="social-icons__icon" style="background-image: url('https://dfm.io/svg/twitter.svg')"></div>
       </a>
     
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Mastodon"
+        href="https://fosstodon.org/@dfm"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://dfm.io/svg/mastodon.svg')"></div>
+      </a>
+    
      
 </div>
 
-            <p>© 2014-2022 Dan Foreman-Mackey</p>
+            <p>© 2014-2025 Dan Foreman-Mackey</p>
           </footer>
           </div>
       </div>

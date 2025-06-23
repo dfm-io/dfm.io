@@ -38,7 +38,7 @@
     <link type="text/css" rel="stylesheet" href="../../css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
   
     
-    <link type="text/css" rel="stylesheet" href="../../css/custom.min.ababf9469c50f82854b25f46557a3ab4d683728134d6c7a55f0169a9446b66cd.css" integrity="sha256-q6v5RpxQ&#43;ChUsl9GVXo6tNaDcoE01selXwFpqURrZs0="/>
+    <link type="text/css" rel="stylesheet" href="../../css/custom.min.1f57f8800830abb72375a261f1dce94fd4baa8d1e1cb788d1a2c0961fe963544.css" integrity="sha256-H1f4gAgwq7cjdaJh8dzpT9S6qNHhy3iNGiwJYf6WNUQ="/>
   
   
    
@@ -314,7 +314,11 @@ labels = [&quot;$m$&quot;, &quot;$b$&quot;, &quot;$Q$&quot;, &quot;$M$&quot;, &q
 truths = true_params + [true_frac, true_outliers[0], np.log(true_outliers[1])]
 corner.corner(sampler.flatchain, bins=35, extents=bounds, labels=labels, truths=truths);
 </code></pre>
-<pre><code>WARNING:root:Deprecated keyword argument 'extents'. Use 'range' instead.
+<pre><code>&lt;&gt;:3: SyntaxWarning: invalid escape sequence '\l'
+&lt;&gt;:3: SyntaxWarning: invalid escape sequence '\l'
+/tmp/ipykernel_2148/3333219463.py:3: SyntaxWarning: invalid escape sequence '\l'
+  labels = [&quot;$m$&quot;, &quot;$b$&quot;, &quot;$Q$&quot;, &quot;$M$&quot;, &quot;$\ln V$&quot;]
+WARNING:root:Deprecated keyword argument 'extents'. Use 'range' instead.
 </code></pre>
 <p><img src="output_11_1.png" alt="png"></p>
 <p>Similarly, the predicted constraint on the linear model is:</p>
@@ -515,10 +519,23 @@ pl.xlim(-2.1, 2.1);
         <div class="social-icons__icon" style="background-image: url('https://dfm.io/svg/twitter.svg')"></div>
       </a>
     
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Mastodon"
+        href="https://fosstodon.org/@dfm"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://dfm.io/svg/mastodon.svg')"></div>
+      </a>
+    
      
 </div>
 
-            <p>© 2014-2022 Dan Foreman-Mackey</p>
+            <p>© 2014-2025 Dan Foreman-Mackey</p>
           </footer>
           </div>
       </div>
