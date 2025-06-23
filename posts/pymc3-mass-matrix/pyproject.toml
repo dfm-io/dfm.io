@@ -9,7 +9,7 @@ dependencies = [
     "matplotlib>=3.7.1",
     "nbconvert>=7.6.0",
     "notebook>=6.5.4",
-    "numpy<1.22",
+    "numpy<1.22.0",
     "pymc3>=3.11.5",
     "scipy>=1.7.3",
 ]
