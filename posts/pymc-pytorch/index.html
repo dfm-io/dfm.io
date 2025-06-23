@@ -109,12 +109,8 @@
             <i>
             
               <p>
-                The source for this post can be found <a href="https://github.com/dfm-io/post--pymc-pytorch">here</a>.
+                The source for this post can be found <a href="https://github.com/dfm-io/dfm.io/tree/main/posts/pymc-pytorch/">here</a>.
                 Please open an issue or pull request on that repository if you have questions, comments, or suggestions. 
-              </p>
-              <p>
-                This post is implemented as a Jupyter notebook;
-                <a href="https://mybinder.org/v2/gh/dfm-io/post--pymc-pytorch/executed?labpath=post.ipynb">launch an executable version of this post on MyBinder.org</a>.
               </p>
             
             </i>
@@ -309,7 +305,7 @@ NUTS: [logs, b, m]
   <progress value='6000' class='' max='6000' style='width:300px; height:20px; vertical-align: middle;'></progress>
   100.00% [6000/6000 00:15&lt;00:00 Sampling chain 1, 0 divergences]
 </div>
-<pre><code>Sampling 2 chains for 5_000 tune and 1_000 draw iterations (10_000 + 2_000 draws total) took 31 seconds.
+<pre><code>Sampling 2 chains for 5_000 tune and 1_000 draw iterations (10_000 + 2_000 draws total) took 32 seconds.
 </code></pre>
 <p>Note that unlike the TensorFlow implementation, there&rsquo;s no problem using multiple cores with this model and we actually get more than a factor of two increase in efficiency (probably because PyTorch has less Python overhead per call).</p>
 <p>For comparison, we can reimplement the same model directly in PyMC3:</p>
@@ -348,7 +344,7 @@ NUTS: [logs, b, m]
 </style>
 <div>
   <progress value='6000' class='' max='6000' style='width:300px; height:20px; vertical-align: middle;'></progress>
-  100.00% [6000/6000 00:05&lt;00:00 Sampling chain 0, 0 divergences]
+  100.00% [6000/6000 00:04&lt;00:00 Sampling chain 0, 0 divergences]
 </div>
 <style>
     /* Turns off some styling */

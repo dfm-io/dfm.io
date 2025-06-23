@@ -109,12 +109,8 @@
             <i>
             
               <p>
-                The source for this post can be found <a href="https://github.com/dfm-io/post--intro-to-numpyro">here</a>.
+                The source for this post can be found <a href="https://github.com/dfm-io/dfm.io/tree/main/posts/intro-to-numpyro/">here</a>.
                 Please open an issue or pull request on that repository if you have questions, comments, or suggestions. 
-              </p>
-              <p>
-                This post is implemented as a Jupyter notebook;
-                <a href="https://mybinder.org/v2/gh/dfm-io/post--intro-to-numpyro/executed?labpath=post.ipynb">launch an executable version of this post on MyBinder.org</a>.
               </p>
             
             </i>
@@ -299,8 +295,8 @@ sampler = infer.MCMC(
 <pre><code>No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
 
 
-CPU times: user 3 s, sys: 30.6 ms, total: 3.03 s
-Wall time: 2.96 s
+CPU times: user 2.93 s, sys: 45 ms, total: 2.98 s
+Wall time: 2.91 s
 </code></pre>
 <p>The published version of this post is executed on GitHub Actions with a pretty teeny CPU, but the full runtime for this model is less than 2 seconds on my laptop.
 In this case, the runtime is actually probably dominated by JIT compilation and Python overheads, but it&rsquo;s also a pretty simple model with only 2 parameters, so we&rsquo;d expect it to be fast.</p>
@@ -482,8 +478,8 @@ sampler = infer.MCMC(
 )
 %time sampler.run(jax.random.PRNGKey(3), x, yerr, y=y)
 </code></pre>
-<pre><code>CPU times: user 4.69 s, sys: 35.4 ms, total: 4.72 s
-Wall time: 4.61 s
+<pre><code>CPU times: user 4.71 s, sys: 32.6 ms, total: 4.75 s
+Wall time: 4.64 s
 </code></pre>
 <p>This model is a bit more complicated, but it still runs pretty quickly, with the runtime again dominated by just-in-time compilation (try increasing the number of samples if you don&rsquo;t believe me!).
 As before, we can check convergence and make a corner plot:</p>
@@ -660,8 +656,8 @@ sampler = infer.MCMC(
 )
 %time sampler.run(jax.random.PRNGKey(3), x, yerr, y=y)
 </code></pre>
-<pre><code>CPU times: user 4.88 s, sys: 8.84 ms, total: 4.89 s
-Wall time: 4.77 s
+<pre><code>CPU times: user 4.84 s, sys: 36.1 ms, total: 4.87 s
+Wall time: 4.73 s
 </code></pre>
 <p>As in the mixture models post, we can use the mixture membership probabilities to plot the data points colored by their probability of being an outlier:</p>
 <pre><code class="language-python">p_fg = jnp.mean(jnp.exp(sampler.get_samples()[&quot;p&quot;][..., 0]), axis=0)
@@ -839,8 +835,8 @@ plt.ylabel(&quot;posterior density&quot;)
 plt.legend(loc=1)
 plt.yticks([]);
 </code></pre>
-<pre><code>CPU times: user 2.05 s, sys: 3.96 ms, total: 2.06 s
-Wall time: 2.01 s
+<pre><code>CPU times: user 2.04 s, sys: 3.25 ms, total: 2.04 s
+Wall time: 1.99 s
 </code></pre>
 <p><img src="output_31_1.png" alt="png"></p>
 <p>This is a case where the inferred distance is somewhat inconsistent with the value computed by inverting the parallax as a distance estimator.</p>
@@ -977,8 +973,8 @@ So let&rsquo;s just bite the bullet and run the MCMC:</p>
 )
 %time sampler.run(jax.random.PRNGKey(7), plx_err, plx=plx, plx_zp=plx_zp)
 </code></pre>
-<pre><code>CPU times: user 11min 26s, sys: 1.98 s, total: 11min 28s
-Wall time: 6min 59s
+<pre><code>CPU times: user 11min 27s, sys: 2.11 s, total: 11min 29s
+Wall time: 7min
 </code></pre>
 <p>Again, the published version of this post was executed on GitHub Actions, so you&rsquo;ll probably find that this runs a little faster on your own machine (this takes about 5 minutes on my laptop).
 Even so, this model definitely takes a little longer to run than the earlier examples, but remember that we&rsquo;re fitting thousands of parameters here, so I&rsquo;m willing to take this hit as long as the results are sensible.
