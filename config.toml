@@ -8,7 +8,7 @@ copyright = "© 2014-{year} Dan Foreman-Mackey"
 [params]
   github = "https://github.com/dfm"
   bluesky = "https://bsky.app/profile/dfm.io"
-  email = "mailto:dfm@dfm.io"
+  email = "mailto:foreman.mackey@gmail.com"
   iconOrder = ["GitHub", "Email", "Bluesky"]
   Description = "Dan Foreman-Mackey is Research Engineer at Google DeepMind working on JAX."
   customCss = ["css/custom.css"]
