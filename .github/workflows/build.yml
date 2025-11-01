@@ -45,7 +45,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         if: ${{ matrix.post != 'placeholder' }}
-      - uses: astral-sh/setup-uv@v6
+      - uses: astral-sh/setup-uv@v7
         if: ${{ matrix.post != 'placeholder' }}
       - run: |
           cd posts/${{ matrix.post }}
@@ -93,7 +93,7 @@ jobs:
         with:
           merge-multiple: true
           path: executed
-      - uses: astral-sh/setup-uv@v6
+      - uses: astral-sh/setup-uv@v7
       - run: uv run scripts/render_notebooks.py
       - uses: peaceiris/actions-hugo@v3
         with:
