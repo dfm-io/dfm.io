@@ -4,9 +4,8 @@ title: "About"
 
 ## Hi, I'm Dan Foreman-Mackey
 
-I'm a Research Engineer at Google Deepmind in New York City.
-I'm currently working on [JAX](https://github.com/google/jax).
-I used to be an astrophysicist who developed some open source scientific software.
+I'm a Research Engineer at [Anthropic](https://www.anthropic.com/) in New York City, working on AI Interpretability.
+Previously, I worked on [JAX](https://github.com/jax-ml/jax) at Google DeepMind, and before that I was an astrophysicist who developed open source scientific software.
 
 ### Code
 
