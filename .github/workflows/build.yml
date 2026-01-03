@@ -70,7 +70,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-posts-${{ github.head_ref || github.ref }}-
             ${{ runner.os }}-posts-
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           merge-multiple: true
           path: executed
@@ -89,7 +89,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           submodules: recursive
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           merge-multiple: true
           path: executed
