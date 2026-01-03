@@ -23,7 +23,7 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/cache/restore@v4
+      - uses: actions/cache/restore@v5
         with:
           path: executed
           key: ${{ runner.os }}-posts-${{ github.head_ref || github.ref }}-${{ github.sha }}
@@ -63,7 +63,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: executed
           key: ${{ runner.os }}-posts-${{ github.head_ref || github.ref }}-${{ github.sha }}
