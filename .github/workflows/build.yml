@@ -51,7 +51,7 @@ jobs:
           cd posts/${{ matrix.post }}
           uv run jupyter nbconvert --to notebook --output=${{ matrix.post }}.ipynb --execute post.ipynb
         if: ${{ matrix.post != 'placeholder' }}
-      - uses: actions/upload-artifact@v6
+      - uses: actions/upload-artifact@v7
         if: ${{ matrix.post != 'placeholder' && always() }}
         with:
           name: ${{ matrix.post }}
