@@ -278,7 +278,7 @@ NUTS: [logs, b, m]
 </style>
 <div>
   <progress value='6000' class='' max='6000' style='width:300px; height:20px; vertical-align: middle;'></progress>
-  100.00% [6000/6000 00:15&lt;00:00 Sampling chain 0, 0 divergences]
+  100.00% [6000/6000 00:16&lt;00:00 Sampling chain 0, 0 divergences]
 </div>
 <style>
     /* Turns off some styling */
@@ -297,9 +297,9 @@ NUTS: [logs, b, m]
 </style>
 <div>
   <progress value='6000' class='' max='6000' style='width:300px; height:20px; vertical-align: middle;'></progress>
-  100.00% [6000/6000 00:13&lt;00:00 Sampling chain 1, 0 divergences]
+  100.00% [6000/6000 00:15&lt;00:00 Sampling chain 1, 0 divergences]
 </div>
-<pre><code>Sampling 2 chains for 5_000 tune and 1_000 draw iterations (10_000 + 2_000 draws total) took 29 seconds.
+<pre><code>Sampling 2 chains for 5_000 tune and 1_000 draw iterations (10_000 + 2_000 draws total) took 31 seconds.
 </code></pre>
 <p>Note that unlike the TensorFlow implementation, there&rsquo;s no problem using multiple cores with this model and we actually get more than a factor of two increase in efficiency (probably because PyTorch has less Python overhead per call).</p>
 <p>For comparison, we can reimplement the same model directly in PyMC3:</p>
@@ -338,7 +338,7 @@ NUTS: [logs, b, m]
 </style>
 <div>
   <progress value='6000' class='' max='6000' style='width:300px; height:20px; vertical-align: middle;'></progress>
-  100.00% [6000/6000 00:03&lt;00:00 Sampling chain 0, 0 divergences]
+  100.00% [6000/6000 00:05&lt;00:00 Sampling chain 0, 0 divergences]
 </div>
 <style>
     /* Turns off some styling */
@@ -357,9 +357,9 @@ NUTS: [logs, b, m]
 </style>
 <div>
   <progress value='6000' class='' max='6000' style='width:300px; height:20px; vertical-align: middle;'></progress>
-  100.00% [6000/6000 00:03&lt;00:00 Sampling chain 1, 0 divergences]
+  100.00% [6000/6000 00:04&lt;00:00 Sampling chain 1, 0 divergences]
 </div>
-<pre><code>Sampling 2 chains for 5_000 tune and 1_000 draw iterations (10_000 + 2_000 draws total) took 7 seconds.
+<pre><code>Sampling 2 chains for 5_000 tune and 1_000 draw iterations (10_000 + 2_000 draws total) took 10 seconds.
 </code></pre>
 <p>In this case, the PyMC3 model is about a factor of 2 faster than the PyTorch model, but this is a simple enough model that it&rsquo;s not really a fair comparison.
 I expect that this gap would close for more expensive models where the overhead is less important.
