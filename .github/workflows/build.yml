@@ -30,7 +30,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-posts-${{ github.head_ref || github.ref }}-
             ${{ runner.os }}-posts-
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.13"
       - id: set-matrix
@@ -74,7 +74,7 @@ jobs:
         with:
           merge-multiple: true
           path: executed
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.13"
       - run: python scripts/generate_matrix.py checksums
